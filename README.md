@@ -5,7 +5,7 @@
 Geosmin is a vending React App collectively built by three team members. This online store exhibits authentication and full CRUD using Express, Mongoose, and MongoDB. In a git flow style we've adhered to strict React arhitecture organization.
 
 ## Component Hierarchy
-![React Architecture](https://whimsical.com/react-architecture-exercise-JrYPHSwt9kg2ss6g68mxCn)
+![React Architecture](https://whimsical.com/geosmin-JrYPHSwt9kg2ss6g68mxCn)
 
 ## API and Data Sample
 
