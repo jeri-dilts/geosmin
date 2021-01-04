@@ -1,13 +1,11 @@
-# GEOSMIN
+# GEOSMIN :mushroom:
 ### A gourmet mushroom and microgreen urban farm store
 
 ## Project Description
 Geosmin is a vending React App collectively built by three team members. This online store exhibits authentication and full CRUD using Express, Mongoose, and MongoDB. In a git flow style we've adhered to strict React arhitecture organization.
 
 ## Component Hierarchy
-![React Architecture](https://whimsical.com/geosmin-JrYPHSwt9kg2ss6g68mxCn)
-
-## API and Data Sample
+[React Architecture](https://whimsical.com/geosmin-JrYPHSwt9kg2ss6g68mxCn)
 
 ## MVP
 ### Client (Front End)
@@ -18,9 +16,7 @@ Use only React for DOM Manipulation.
 Consume data from your API, and render that data in your components.  
 Utilize React Router, for client-side routing.  
 Authentication!  
-Landing Screen  
-Listing Screen  
-Detail Screen  
+Landing Screen, Listing Screen, Detail Screen  
 
 ### Server (Back End)
 Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB.  
