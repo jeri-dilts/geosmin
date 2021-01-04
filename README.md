@@ -1,11 +1,11 @@
 # GEOSMIN
-## A gourmet mushroom and microgreen urban farm store
+### A gourmet mushroom and microgreen urban farm store
 
 ## Project Description
 Geosmin is a vending React App collectively built by three team members. This online store exhibits authentication and full CRUD using Express, Mongoose, and MongoDB. In a git flow style we've adhered to strict React arhitecture organization.
 
 ## Component Hierarchy
-![Component Hierarchy]()
+![React Architecture](https://whimsical.com/react-architecture-exercise-JrYPHSwt9kg2ss6g68mxCn)
 
 ## API and Data Sample
 
