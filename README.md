@@ -1,5 +1,4 @@
-# GEOSMIN :mushroom:
-### A gourmet mushroom and microgreen urban farm store
+# GEOSMIN :mushroom: - ### A gourmet mushroom and microgreen urban farm store
 
 ## Project Description
 Geosmin is a vending React App collectively built by three team members. This online store exhibits authentication and full CRUD using Express, Mongoose, and MongoDB. In a git flow style we've adhered to strict React arhitecture organization.
@@ -35,8 +34,9 @@ Deploy the MongoDB database on MongoDB Atlas.
 ## Post-MVP 
 Build a custom hook  
 Parallax effect  
-Customer reviews &&|| rating
-Create a second user (besides admin) with limited privileges   
+Customer reviews &&|| rating  
+Create a second user (besides admin) with limited privileges 
+Form validation  
 
 
 ## Adobe XD Prototype
