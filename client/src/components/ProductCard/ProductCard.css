@@ -1,0 +1,36 @@
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90vw;
+  margin-top: 50px;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 15vw;
+  height: 260px;
+}
+
+.card {
+  align-self: center;
+  margin: 0;
+}
+
+.card-imgURL {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}

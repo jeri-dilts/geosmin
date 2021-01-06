@@ -1,10 +1,13 @@
 import React from 'react';
+import './Layout.css';
+import Nav from '../Nav/Nav';
 
-const Layout = () => {
+const Layout = (props) => {
   return (
-    <div>
-      
-    </div>
+<div className="layout">
+  <Nav />
+  <div className="layout-children">{props.children}</div>
+</div>
   );
 };
 
