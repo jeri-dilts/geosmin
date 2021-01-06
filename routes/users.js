@@ -1,10 +1,10 @@
 const { Router } = require('express')
-const controllers = require('../controllers/users')
+const controllers = require('../controller/users')
 
 const router = Router()
 
 router.post('/sign-up', controllers.signUp)
-router.post('/sign-in', controllers.signIn)
+router.post('/login', controllers.login)
 router.get('/verify', controllers.verify)
 router.post('/change-password', controllers.changePassword)
 
