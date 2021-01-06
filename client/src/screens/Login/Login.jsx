@@ -3,8 +3,8 @@ import { useHistory } from 'react-router-dom';
 import TextField from "@material-ui/core/TextField";
 import Layout from "../../components/shared/Layout/Layout";
 import Button from "@material-ui/core/Button";
-import "./Login.css";
 import { login } from "../../services/users";
+import "./Login.css";
 
 
 
