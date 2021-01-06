@@ -1,18 +1,21 @@
-.login-button {
+* {
+  margin: 0;
+}
+.signup-button {
   height: 55px;
   width: 20vw;
   margin-top: 10px;
 }
-.login-form{
+.signup-form{
   width: 22vw;
 }
-.login-div {
+.signup-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.login-field{
+.signup-field{
   width: 20vw;
   margin-bottom: 10px;
 }

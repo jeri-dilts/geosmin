@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import ProductCards from "../../components/ProductCards/ProductCards";
 
 const Products = () => {
   return (
     <div>
-      products
+      <ProductCards />
     </div>
   );
 };
