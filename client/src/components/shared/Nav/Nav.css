@@ -1,13 +1,12 @@
-.nav {
-  width: 100vw;
-  height: 100px;
-  display: flex;
+nav{
+  
 }
 
-.header {
-  height: 40px;
-  width: 100vw;
-  background-color: #889696;
+.logo-div{
+  display: flex;
+  justify-content: flex-start;
+  margin-top:20px;
+  width: 25vw;
 }
 
 .logo {
@@ -17,6 +16,21 @@
   color: black;
   justify-content: flex-start;
 }
+
+.nav-div {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header {
+  height: 40px;
+  width: 100vw;
+  background-color: #889696;
+}
+
+
 
 .link {
   flex: 2;

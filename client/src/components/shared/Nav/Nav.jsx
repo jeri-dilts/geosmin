@@ -6,10 +6,12 @@ const Nav = () => {
   return (
     <nav>
       <div className="header"></div>
-      <div className="nav">
+      <div className="logo-div">
         <NavLink className="logo" to="/">
           Geosmin
         </NavLink>
+        </div>
+        <div className='nav-div'>
         <div className="search">Search</div>
         <div>
           <NavLink className="link" to="/login">
