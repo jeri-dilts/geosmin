@@ -1,5 +1,7 @@
 import axios from 'axios'
 
+
+//Think we need to remove the 'items' from the end of address to properly sort this
 const apiURL = 'https://geosmin.herokuapp.com/api'
 
 export const getProducts = async () => {
@@ -39,13 +41,6 @@ export const deleteProduct = async id => {
     } catch (error) {
         throw error
     }
-}
-
-
-
-
-
-
 }
 
 //this is for axios calls

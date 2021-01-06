@@ -1,12 +1,12 @@
 import React from 'react';
 import './Home.css';
-import '../../components/ProductCards/ProductCards.css';
 import Layout from '../../components/shared/Layout/Layout';
+import ProductCards from '../../components/ProductCards/ProductCards'
 
 const Home = () => {
   return (
     <Layout>
-    <div className="posts">
+    <div className="products">
       <ProductCards />
     </div>
     </Layout>

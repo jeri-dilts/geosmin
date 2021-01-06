@@ -1,9 +1,16 @@
 import React from 'react';
+import './ProductCard.css';
+import {Link} from 'react-router-dom';
 
-const ProductCard = () => {
+const ProductCard = (props) => {
+  console.log(props);
+
   return (
-    <div>
-      
+    <div className='productCard'>
+      <Link className='card' to={`/products/${props._id}`}>
+        <img className='card-imgURL' src={props.imgURL} alt='' />
+      </Link>
+      <div className='card-title'>{props.title}</div>
     </div>
   );
 };
