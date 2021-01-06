@@ -16,3 +16,15 @@
     width: 200px;
     object-fit: cover;
 }
+
+.allIMG {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.featuredIMG {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+}
