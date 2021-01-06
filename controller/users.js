@@ -11,13 +11,15 @@ const TOKEN_KEY = 'areallylonggoodkey'
 const signUp = async (req, res) => {
         try {
           const { username, email, password } = req.body
+          console.log(username)
           const password_digest = await bcrypt.hash(password, SALT_ROUNDS)
           const user = new User({
               username,
               email,
               password_digest
           })
-
+          console.log(password_digest)
+          console.log(user)
           await user.save()
 
           const payload = {
@@ -32,7 +34,7 @@ const signUp = async (req, res) => {
       }
 }
 
-const signIn = async (req, res) => {
+const login = async (req, res) => {
             try {
               const { username, password } = req.body
               const user = await User.findOne({ username: username })
@@ -68,7 +70,7 @@ const changePassword = async (req, res) => { }
 
 module.exports = {
     signUp,
-    signIn,
+    login,
     verify,
     changePassword
 }
