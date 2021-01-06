@@ -1,5 +1,7 @@
 import './App.css';
 import { Route, Switch } from 'react-router-dom'
+
+//screen components
 import Home from './screens/Home/Home';
 import Products from './screens/Products/Products';
 import ProductDetail from './screens/ProductDetail/ProductDetail';
