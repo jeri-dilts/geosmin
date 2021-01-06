@@ -7,6 +7,6 @@ const router = Router();
 router.get('/', (req, res) => res.send('This is the api root!'))
 
 router.use('/', usersRouter);
-router.use('/products', itemsRouter);
+router.use('/items', itemsRouter);
 
 module.exports = router

@@ -3,8 +3,8 @@ import { useHistory } from 'react-router-dom';
 import TextField from "@material-ui/core/TextField";
 import Layout from "../../components/shared/Layout/Layout";
 import Button from "@material-ui/core/Button";
-import "./Login.css";
 import { login } from "../../services/users";
+import "./Login.css";
 
 
 
@@ -35,6 +35,7 @@ const Login = (props) => {
     login(form)
       .then((user) => {
         setUser(user);
+        console.log(user);
       })
       .then(() => history.push("/"))
       .catch((error) => {
@@ -52,13 +53,14 @@ const Login = (props) => {
     const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <button type="submit" className={toggleForm}>
+        <Button type="submit" className={toggleForm}
+        variant="contained">
           {form.errorMsg}
-        </button>
+        </Button>
       );
     } else {
       return (
-        <Button className="login-button" variant="contained">
+        <Button type='submit' className="login-button" variant="contained">
           Login
         </Button>
       );
@@ -77,7 +79,6 @@ const Login = (props) => {
             name='username'
             value={username}
             className="login-field"
-            id="outlined-basic"
             label="Username"
             variant="outlined"
           />
@@ -87,7 +88,6 @@ const Login = (props) => {
             name='password'
             value={password}
             className="login-field"
-            id="outlined-basic"
             label="Password"
             variant="outlined"
             type="password"
