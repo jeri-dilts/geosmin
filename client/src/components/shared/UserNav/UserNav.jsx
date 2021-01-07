@@ -11,7 +11,7 @@ const UserNav = (props) => {
         </NavLink>
       </div>
       <div>
-        {props.username.username}
+        <p>Welcome {props.username.username}</p>
         <div>
           <NavLink className="link" to="/products">
             All Products

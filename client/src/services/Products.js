@@ -28,7 +28,7 @@ export const getProduct = async id => {
 
 export const createProduct = async product => {
     try {
-        const response = await axios.product(`${apiURL}/items`, product)
+        const response = await axios.post(`${apiURL}/items`, product)
         return response.data
     } catch (error) {
         throw error

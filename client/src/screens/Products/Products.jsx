@@ -2,9 +2,9 @@ import React from "react";
 import ProductCards from "../../components/ProductCards/ProductCards";
 import Layout from "../../components/shared/Layout/Layout";
 
-const Products = () => {
+const Products = (props) => {
   return (
-    <Layout>
+    <Layout username={props.user}>
       <div>
         <ProductCards />
       </div>
