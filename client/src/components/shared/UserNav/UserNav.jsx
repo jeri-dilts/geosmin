@@ -4,31 +4,32 @@ import {NavLink} from 'react-router-dom'
 
 const UserNav = (props) => {
   return (
-    <div>
+    <nav>
+      <div class='header'>
+      <div className='usernav'>
+        <div className='user'> 
+        Welcome {props.username.username}!
+        </div>
+        <div className='navmenu'>
+          <NavLink className="navlogin" to="/products">
+            All Products
+          </NavLink>
+          <NavLink className="navsignup" to="/add">
+            Add Product
+          </NavLink>
+          <NavLink className="navsignout" to="/signout">
+            SignOut
+          </NavLink>
+          </div>
+        </div>
+      </div>
       <div className="logo-div">
         <NavLink className="logo" to="/">
           Geosmin
         </NavLink>
       </div>
-      <div>
-        <p>Welcome {props.username.username}</p>
-        <div>
-          <NavLink className="link" to="/products">
-            All Products
-          </NavLink>
-        </div>
-        <div>
-          <NavLink className="link" to="/add">
-            Add Product
-          </NavLink>
-        </div>
-        <div>
-          <NavLink className="link" to="/signout">
-            SignOut
-          </NavLink>
-        </div>
-      </div>
-    </div>
+      
+    </nav>
   );
 };
 
