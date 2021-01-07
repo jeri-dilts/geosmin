@@ -9,7 +9,7 @@ const SignOut = (props) => {
   useEffect(() => {
     signOut(user)
       .then(() => clearUser())
-      .finally(() => history.push("/login"));
+      .finally(() => history.push("/"));
   }, [history, clearUser, user]);
 
   return ''

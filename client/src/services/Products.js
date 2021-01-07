@@ -2,7 +2,8 @@ import axios from 'axios'
 
 
 //Think we need to remove the 'items' from the end of address to properly sort this
-const apiURL = 'https://geosmin.herokuapp.com/api'
+// const apiURL = 'https://geosmin.herokuapp.com/api'
+const apiURL = 'http://localhost:3000/api'
 
 export const getProducts = async () => {
 
