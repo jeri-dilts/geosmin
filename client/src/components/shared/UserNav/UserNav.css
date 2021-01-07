@@ -1,11 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
 
+nav {
+  display: grid;
+  grid-row: repeat(3 auto);
+  font-family: "Krona One", sans-serif;
+}
 
-.logo-div{
-  display: flex;
-  justify-content: flex-start;
-  margin-top:20px;
+.header {
+  height: 4rem;
+  width: 100vw;
+  background-color: #5f7470;
+}
+
+.logo-div {
+  margin-top: 20px;
   width: 25vw;
+  grid-column-start: 1;
+  z-index: 1;
 }
 
 .logo {
@@ -13,41 +24,73 @@
   text-decoration: none;
   color: black;
   justify-content: flex-start;
-  font-family: 'Krona One', sans-serif;
   margin-left: 15px;
 }
 
-.nav-div {
+.usernav {
   width: 100vw;
-  height: 100px;
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-row: repeat(2 auto);
 }
 
-.header {
-  height: 40px;
-  width: 100vw;
-  background-color: #5F7470;
+.user {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+  padding-top: 10px;
+  grid-column-start: 5;
+  grid-row-start: 1;
+  text-align: center;
 }
 
-
-
-.link {
-  font-family: 'Krona One', sans-serif;
-  flex: 2;
-  align-items: center;
-  display: flex;
+.navmenu{
+  grid-row-start:2;
+  grid-column-start:5;
+  margin-top: 5px;
+  margin-right: 15px;
+  text-align: right;
+}
+.navprod {
   font-size: 14px;
   text-decoration: none;
   color: black;
-  padding: 10px;
-  margin-right: 25px;
+  grid-row-start: 2;
+  grid-column-start: 3;
+  margin: 10px;
 }
 
-.search {
-  font-family: 'Krona One', sans-serif;
+.navadd {
   font-size: 14px;
-  padding: 10px;
-  display: flex;
-  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  grid-row-start: 2;
+  grid-column-start: 4;
+  margin: 10px;
+}
+
+.navlogin {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  grid-row-start: 2;
+  grid-column-start: 3;
+  margin: 10px;
+}
+
+.navsignup {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  grid-row-start: 2;
+  grid-column-start: 4;
+  margin: 10px;
+}
+
+.navsignout {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  grid-row-start: 2;
+  grid-column-start: 5;
+  margin: 10px;
 }
