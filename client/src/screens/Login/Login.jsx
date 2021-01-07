@@ -35,7 +35,6 @@ const Login = (props) => {
     login(form)
       .then((user) => {
         setUser(user);
-        console.log(user);
       })
       .then(() => history.push("/"))
       .catch((error) => {

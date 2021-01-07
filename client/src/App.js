@@ -11,6 +11,7 @@ import Login from './screens/Login/Login';
 import AddProduct from './screens/AddProduct/AddProduct';
 import SignUp from './screens/SignUp/SignUp';
 import { verifyUser } from './services/users';
+import SignOut from './screens/SignOut/SignOut';
 
 function App() {
   const [user, setUser] = useState(null)
@@ -23,7 +24,7 @@ function App() {
     fetchUser()
   }, [])
   
-  // const clearUser = () => setUser(null)
+  const clearUser = () => setUser(null)
 
   return (
     <div className="App">
@@ -48,6 +49,9 @@ function App() {
         </Route>
         <Route path='/signup'>
           <SignUp setUser={setUser} />
+        </Route>
+        <Route path='/signout'>
+          <SignOut setUser={setUser} clearUser={clearUser} />
         </Route>
       </Switch>
     </div>

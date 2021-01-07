@@ -4,9 +4,9 @@ import Layout from "../../components/shared/Layout/Layout";
 import Footer from '../../components/shared/Footer/Footer';
 import { NavLink } from "react-router-dom";
 
-const Home = () => {
+const Home = (props) => {
   return (
-    <Layout>
+    <Layout username={props.user}>
       <div className="homeIMG">
         <img
           className="home-image"
