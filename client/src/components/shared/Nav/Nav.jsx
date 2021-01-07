@@ -2,7 +2,8 @@ import React from "react";
 import "./Nav.css";
 import { NavLink } from "react-router-dom";
 
-const Nav = () => {
+const Nav = (props) => {
+
   return (
     <nav>
       <div className="header"></div>
@@ -11,7 +12,10 @@ const Nav = () => {
           Geosmin
         </NavLink>
         </div>
-        <div className='nav-div'>
+      <div className='nav-div'>
+        <div> 
+          {props.username ? <>{props.username.username}</> : <div></div>}
+        </div>
         <div className="search">Search</div>
         <div>
           <NavLink className="link" to="/login">
@@ -21,6 +25,11 @@ const Nav = () => {
         <div>
           <NavLink className="link" to="/signup">
             SignUp
+          </NavLink>
+        </div>
+        <div>
+        <NavLink className="link" to='/signout' >
+            SignOut
           </NavLink>
         </div>
       </div>
