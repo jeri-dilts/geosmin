@@ -13,10 +13,8 @@ const Nav = (props) => {
         </NavLink>
         </div>
       <div className='nav-div'>
-        <div> 
-          {props.username ? <>{props.username.username}</> : <div></div>}
-        </div>
-        <div className="search">Search</div>
+        {/* This is for future development */}
+        {/* <div className="search">Search</div> */}
         <div>
           <NavLink className="link" to="/login">
             Login
@@ -25,11 +23,6 @@ const Nav = (props) => {
         <div>
           <NavLink className="link" to="/signup">
             SignUp
-          </NavLink>
-        </div>
-        <div>
-        <NavLink className="link" to='/signout' >
-            SignOut
           </NavLink>
         </div>
       </div>

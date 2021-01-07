@@ -5,6 +5,7 @@ import Footer from '../../components/shared/Footer/Footer';
 import { NavLink } from "react-router-dom";
 
 const Home = (props) => {
+
   return (
     <Layout username={props.user}>
       <div className="homeIMG">
