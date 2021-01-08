@@ -3,6 +3,7 @@ import Layout from "../../components/shared/Layout/Layout";
 import { getProduct, deleteProduct } from "../../services/Products";
 import { useParams } from "react-router-dom";
 import { Card } from "@material-ui/core";
+import './ProductDetail.css';
 
 //Need to add more Schema items to the return section
 

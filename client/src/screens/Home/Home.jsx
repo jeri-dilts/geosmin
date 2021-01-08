@@ -43,7 +43,6 @@ const Home = (props) => {
           </NavLink>
         </div>
       </div>
-      <Footer />
     </Layout>
   );
 };

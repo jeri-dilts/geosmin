@@ -1,7 +1,7 @@
 .all-products{
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   position: relative;
   top: 200px;
 }
