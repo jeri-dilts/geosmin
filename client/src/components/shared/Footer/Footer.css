@@ -1,22 +1,33 @@
 .footer-div{
-    display: grid;
-    flex-flow: row wrap;
+  display: flex;
+  flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 100vh;
+    position: absolute;
+    bottom:0;
     width:100vw;
     height: 4rem;
-    background-color: #D2D4C8;
-    color: #889696;
+    background-color: #ECCE83;
+    color: black;
 }
 
 .footer-text{
     display: grid;
-    grid-row: 1 auto;
-    grid-column: 2 auto;
-    
+    justify-content: center;
+    margin:5px;
 }
 .icons{
-    flex-flow:row wrap;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.aboutUs{
+    grid-column-start: 1;
+    margin:5px;
+    color: black;
+}
+
+.contactUs{
+    grid-column-start: 2;
+    margin: 5px;
 }

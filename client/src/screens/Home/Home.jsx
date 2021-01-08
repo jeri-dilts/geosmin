@@ -16,19 +16,19 @@ const Home = (props) => {
         />
       </div>
       <div className="product-row">
-        <div className="top">
-          <p className='collection-title'>Top Sellers</p>
+        <div className="mushrooms">
+          <p className='collection-title'>Gourmet Mushrooms</p>
           <img
-            className="topIMG"
-            src="https://images.unsplash.com/photo-1558616629-899031969d5e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+            className="mushroomIMG"
+            src="https://images.unsplash.com/photo-1607529005069-8e1f336233fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
             alt=''
           />
         </div>
-        <div className="featured">
-        <p className='collection-title'>New & Featured</p>
+        <div className="microgreens">
+        <p className='collection-title'>Microgreens</p>
           <img
-            className="featuredIMG"
-            src="https://images.unsplash.com/photo-1593850685222-689a0efd7957?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            className="microgreenIMG"
+            src="https://images.unsplash.com/photo-1593850684972-6ea75dfb77bd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
             alt=''
           />
         </div>
@@ -37,7 +37,7 @@ const Home = (props) => {
           <NavLink to="/products">
             <img
               className="allIMG"
-              src="https://images.unsplash.com/photo-1501169527804-c216a681aab8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+              src="https://images.unsplash.com/photo-1523218507958-81785af4f6e2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
               alt=''
             />
           </NavLink>

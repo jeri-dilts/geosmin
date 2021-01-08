@@ -9,14 +9,17 @@ nav {
 .header {
   height: 4rem;
   width: 100vw;
-  background-color: #5f7470;
+  background-color: #264653;
+  position: fixed;
 }
 
 .logo-div {
   margin-top: 20px;
-  width: 25vw;
+  width: 30vw;
   grid-column-start: 1;
   z-index: 1;
+  position: fixed;
+  top: 7%;
 }
 
 .logo {
@@ -36,61 +39,74 @@ nav {
 .user {
   font-size: 12px;
   text-decoration: none;
-  color: black;
+  color: white;
   padding-top: 10px;
   grid-column-start: 5;
   grid-row-start: 1;
   text-align: center;
+  margin-top:5px;
+  padding-left:15px;
 }
 
 .navmenu{
   grid-row-start:2;
   grid-column-start:5;
+  margin-top: 35px;
+  margin-right: 15px;
+  text-align: right;
+  color:white;
+}
+
+.navmenuadmin{
+  grid-row-start:2;
+  grid-column-start:5;
   margin-top: 5px;
   margin-right: 15px;
   text-align: right;
+  color:white;
 }
+
 .navprod {
-  font-size: 14px;
+  font-size: 10px;
   text-decoration: none;
-  color: black;
   grid-row-start: 2;
   grid-column-start: 3;
   margin: 10px;
+  color:white;
 }
 
 .navadd {
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
-  color: black;
   grid-row-start: 2;
   grid-column-start: 4;
   margin: 10px;
+  color:white;
 }
 
 .navlogin {
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
-  color: black;
   grid-row-start: 2;
   grid-column-start: 3;
   margin: 10px;
+  color:white;
 }
 
 .navsignup {
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
-  color: black;
   grid-row-start: 2;
   grid-column-start: 4;
   margin: 10px;
+  color:white;
 }
 
 .navsignout {
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
-  color: black;
   grid-row-start: 2;
   grid-column-start: 5;
   margin: 10px;
+  color:white;
 }

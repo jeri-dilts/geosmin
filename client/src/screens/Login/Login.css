@@ -1,18 +1,51 @@
+.login-div {
+  display: grid;
+  grid-column: repeat(2 auto);
+  grid-row: repeat(3 auto);
+  position: relative;
+  top: 100px;
+}
+
+.login-text{
+  grid-column-start:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.login-header{
+  font-size: 24px;
+}
+
+.signup-header{
+grid-row-start:2;
+text-decoration: none;
+font-size: 14px;
+color:  #424242;
+}
+
+a{
+text-decoration: none;
+color:#f50057;
+font-size:14px;
+}
+
+.login-form{
+  width: 22vw;
+  grid-column-start: 2;
+}
+
 .login-button {
   height: 55px;
   width: 20vw;
   margin-top: 10px;
 }
-.login-form{
-  width: 22vw;
-}
-.login-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .login-field{
   width: 20vw;
+}
+
+.MuiInputBase-root{
   margin-bottom: 10px;
 }
