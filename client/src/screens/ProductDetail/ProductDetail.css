@@ -1,5 +1,50 @@
 .product-detail{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3 auto);
   position: relative;
   top: 10rem;
+  width: 100vw;
+  justify-content: center;
+}
+
+.image-div{
+  width: 450px;
+  height: 500px;
+}
+
+.product-detail-image{
+  height:500px;
+  width:350px;
+  object-fit: cover;
+  grid-column-start:1;
+}
+
+.detail{
+  grid-column-start: 2;
+  height: 500px;
+}
+
+.title{
+grid-row-start: 1;
+}
+
+.description{
+grid-row-start:2;
+height: 200px;
+}
+
+.button-div{
+  grid-column-start: 1;
+  grid-row-start:2;
+}
+
+.edit-button{
+  grid-row-start:3;
+  grid-column-start: 2;
+  justify-items: flex-end;
+}
+
+.delete-button{
+  grid-row-start:3;
+  grid-column-start: 3;
 }
