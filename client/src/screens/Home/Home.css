@@ -42,3 +42,12 @@
     font-size:16px;
     text-align: center;
 }
+.carousel{
+  width: 20vw;
+}
+.sliderimg{
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+  margin: 10px;
+}
