@@ -19,7 +19,7 @@ const ProductCards = () => {
     index < 8 ? (
       <ProductCard
         _id={product._id}
-        title={product.title}
+        itemName={product.itemName}
         imgURL={product.imgURL}
         key={index}
       />
