@@ -9,6 +9,8 @@ import {
 import { Redirect, useParams } from "react-router-dom";
 import Layout from "../../components/shared/Layout/Layout";
 import MenuItem from '@material-ui/core/MenuItem';
+import SaveIcon from '@material-ui/icons/Save';
+import './EditProduct.css';
 
 const EditProduct = (props) => {
   const [product, setProduct] = useState({
@@ -68,19 +70,9 @@ const EditProduct = (props) => {
             src={product.imgURL}
             alt={product.name}
           />
-          <form onSubmit={handleSubmit}>
-            <TextField
-              className="edit-input-image-link"
-              placeholder="Image Link"
-              value={product.imgURL}
-              name="imgURL"
-              required
-              variant="outlined"
-              onChange={handleChange}
-            />
-          </form>
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
+          <h4>Name</h4>
           <TextField
             className="input-itemName"
             placeholder="Name"
@@ -91,6 +83,7 @@ const EditProduct = (props) => {
             autoFocus
             onChange={handleChange}
           />
+          <h4>Price</h4>
           <TextField
             className="input-price"
             placeholder="Price"
@@ -100,6 +93,16 @@ const EditProduct = (props) => {
             variant="outlined"
             onChange={handleChange}
           />
+          <h4>Image URL</h4>
+          <TextField
+              placeholder="Image Link"
+              value={product.imgURL}
+              name="imgURL"
+              required
+              variant="outlined"
+              onChange={handleChange}
+            />
+            <h4>Description</h4>
           <TextField
             className="textarea-description"
             rows={10}
@@ -129,7 +132,7 @@ const EditProduct = (props) => {
               </MenuItem>
             ))}
           </TextField>
-          <Button type="submit" className="save-button">
+          <Button type="submit" className='save-button' variant='contained' color='secondary' startIcon={<SaveIcon />}>
             Save
           </Button>
         </form>

@@ -10,6 +10,8 @@
 .image-div{
   width: 450px;
   height: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 .product-detail-image{
@@ -22,23 +24,35 @@
 .detail{
   grid-column-start: 2;
   height: 500px;
+  display: flex;
+  flex-direction: column;
 }
 
 .title{
 grid-row-start: 1;
+font-size: 20px;
+}
+
+.detail-price{
+  grid-row-start: 2;
 }
 
 .description{
-grid-row-start:2;
+grid-row-start:3;
 height: 200px;
+font-size: 14px;
 }
 
 .button-div{
   grid-column-start: 1;
   grid-row-start:2;
+  text-align: center;
+  margin-top:10px;
+  display:flex;
+  justify-content: space-evenly;
 }
 
-.edit-button{
+.edit-button-detail{
   grid-row-start:3;
   grid-column-start: 2;
   justify-items: flex-end;
@@ -47,4 +61,9 @@ height: 200px;
 .delete-button{
   grid-row-start:3;
   grid-column-start: 3;
+}
+
+
+.MuiButton-label{
+  color:white;
 }

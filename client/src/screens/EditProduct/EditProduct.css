@@ -1,3 +1,44 @@
-* {
-  margin: 0;
+.product-edit {
+  display: grid;
+  grid-template-columns: repeat(3 auto);
+  position: relative;
+  top: 250px;
+  width: 100vw;
+  justify-content: center;
+}
+
+.image-container {
+  width: 450px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.edit-product-image {
+  height: 500px;
+  width: 350px;
+  object-fit: cover;
+  grid-column-start: 1;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 2;
+  width: 400px;
+  justify-content: space-evenly;
+}
+
+.save-button {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }
