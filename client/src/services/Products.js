@@ -2,7 +2,8 @@ import axios from 'axios'
 
 
 //Think we need to remove the 'items' from the end of address to properly sort this
-const apiURL = 'https://geosmin.herokuapp.com/api'
+// const apiURL = 'https://geosmin.herokuapp.com/api'
+const apiURL = 'http://localhost:3000/api'
 
 export const getProducts = async () => {
 
@@ -27,7 +28,7 @@ export const getProduct = async id => {
 
 export const createProduct = async product => {
     try {
-        const response = await axios.product(`${apiURL}/items`, product)
+        const response = await axios.post(`${apiURL}/items`, product)
         return response.data
     } catch (error) {
         throw error

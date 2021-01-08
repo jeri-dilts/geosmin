@@ -1,10 +1,14 @@
 import React from 'react';
+import AddProductForm from '../../components/AddProductForm/AddProductForm';
+import Layout from '../../components/shared/Layout/Layout';
 
-const AddProduct = () => {
+const AddProduct = (props) => {
   return (
-    <div>
-      add product
+    <Layout username={props.user}>
+    <div class='addproduct'>
+      <AddProductForm />
     </div>
+    </Layout>
   );
 };
 

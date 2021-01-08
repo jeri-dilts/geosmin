@@ -1,0 +1,33 @@
+.footer-div{
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom:0;
+    width:100vw;
+    height: 4rem;
+    background-color: #ECCE83;
+    color: black;
+}
+
+.footer-text{
+    display: grid;
+    justify-content: center;
+    margin:5px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.aboutUs{
+    grid-column-start: 1;
+    margin:5px;
+    color: black;
+}
+
+.contactUs{
+    grid-column-start: 2;
+    margin: 5px;
+}

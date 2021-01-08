@@ -1,0 +1,37 @@
+.goombasquad{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    position:relative;
+    top: 200px;
+}
+
+.goomba{
+    height:200px;
+    width:auto;
+}
+
+.owner{
+    align-content: center;
+}
+
+/* .Jeri{
+}
+
+.Hunter{
+
+}
+
+.Pak{
+
+} */
+
+.aboutheader{
+    margin:0;
+    text-align:center;
+}
+
+img{
+    height: 150px;
+    width: auto;
+}

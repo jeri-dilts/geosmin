@@ -1,5 +1,5 @@
 const Item = require('../models/item')
-const db = require('../controller/connection')
+const db = require('../db/connection')
 // const { get } = require('../controller/connection')
 // const { item } = require('../routes/items')
 

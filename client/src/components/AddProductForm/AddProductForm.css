@@ -1,0 +1,21 @@
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+}
+
+.form {
+width: 22vw;
+}
+
+.textfield {
+width: 22vw;
+}
+
+.MuiButtonBase-root{
+  display: flex;
+  justify-content: center;
+}
