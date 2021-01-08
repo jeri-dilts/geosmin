@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Layout from '../../components/shared/Layout/Layout';
 import {getProduct, deleteProduct} from '../../services/Products';
 import {useParams} from 'react-router-dom';
+import './ProductDetail.css';
 
 //Need to add more Schema items to the return section
 
