@@ -36,7 +36,7 @@ function App() {
         <Route exact path="/products">
           <Products user={user} />
         </Route>
-        <Route path="/product/:id">
+        <Route exact path="/product/:id">
           <ProductDetail user={user} />
         </Route>
         <Route path="/product/edit/:id">
