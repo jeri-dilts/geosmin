@@ -69,7 +69,7 @@ const SignUp = (props) => {
       <div className="signup-div">
       <div className='create-text'>
           <h3 className='create-header'>Create account.</h3>
-          <h6 className='login-header-signup'>Already have an account?  <NavLink to='/login'>Login</NavLink></h6>
+          <h6 className='login-header-signup'>Already have an account?  <NavLink className='login-link' to='/login'>Login</NavLink></h6>
         </div>
         <form onSubmit={onSignUp} className="signup-form">
           <TextField

@@ -4,6 +4,7 @@ import Layout from "../../components/shared/Layout/Layout";
 import { getProduct, deleteProduct } from "../../services/Products";
 import { useParams } from "react-router-dom";
 import { Button } from "@material-ui/core";
+import DeleteIcon from '@material-ui/icons/Delete';
 import './ProductDetail.css';
 
 //Need to add more Schema items to the return section
@@ -44,12 +45,13 @@ const ProductDetail = (props) => {
         </div>
         <div className="detail">
           <div className="title">{product.itemName}</div>
-          <div className="description">{product.description}</div>
           <div className="detail-price">{product.price}</div>
+          <div className="description">{product.description}</div>
+          
           </div>
           <div className='button-div'>
-          <Button className="edit-button"><Link to={`/product/edit/${product._id}`}>Edit</Link></Button>
-          <Button className='delete-button' onClick={onProductDelete}>Delete</Button>
+          <Button className="edit-button-detail" variant='contained' color='primary'><Link to={`/product/edit/${product._id}`}>Edit</Link></Button>
+          <Button className='delete-button' variant='contained' onClick={onProductDelete} color='secondary' startIcon={<DeleteIcon />}>Delete</Button>
         </div>
       </div>
     </Layout>
