@@ -12,8 +12,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 15vw;
-  height: 260px;
+  width: 225px;
+  height: 325px;
   align-items: flex-start;
 }
 
@@ -23,8 +23,8 @@
 }
 
 .card-imgURL {
-  width: 150px;
-  height: 250px;
+  width: 225px;
+  height: 325px;
   object-fit: cover;
   margin-top: 10px;
   justify-content: space-evenly;
@@ -35,6 +35,6 @@
   font-weight: bold;
   text-align: left;
   height: 40px;
-  justify-self: flex-end;
+  width: 225px;
   margin-top:5px;
 }

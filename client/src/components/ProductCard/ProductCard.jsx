@@ -11,6 +11,7 @@ const ProductCard = (props) => {
         <img className='card-imgURL' src={props.imgURL} alt='' />
       </Link>
       <div className='card-title'>{props.itemName}</div>
+      <div className='card-price'>{props.price}</div>
     </div>
   );
 };

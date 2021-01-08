@@ -35,20 +35,21 @@ const ProductDetail = (props) => {
   return (
     <Layout username={props.user}>
       <div className="product-detail">
+        <div className="image-div">
         <img
           className="product-detail-image"
           src={product.imgURL}
           alt={product.itemName}
         />
+        </div>
         <div className="detail">
           <div className="title">{product.itemName}</div>
           <div className="description">{product.description}</div>
-        </div>
-        <div>
-          <Button><Link className="edit-link" to={`/product/edit/${product._id}`}>Edit</Link></Button>
-        </div>
-        <div>
-          <Button onClick={onProductDelete}>Delete</Button>
+          <div className="detail-price">{product.price}</div>
+          </div>
+          <div className='button-div'>
+          <Button className="edit-button"><Link to={`/product/edit/${product._id}`}>Edit</Link></Button>
+          <Button className='delete-button' onClick={onProductDelete}>Delete</Button>
         </div>
       </div>
     </Layout>
