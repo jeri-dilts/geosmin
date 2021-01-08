@@ -33,10 +33,10 @@ function App() {
         <Route exact path="/">
           <Home user={user} />
         </Route>
-        <Route path="/products">
+        <Route exact path="/products">
           <Products user={user} />
         </Route>
-        <Route exact path="/product/:id">
+        <Route path="/product/:id">
           <ProductDetail user={user} />
         </Route>
         <Route path="/product/edit/:id">
