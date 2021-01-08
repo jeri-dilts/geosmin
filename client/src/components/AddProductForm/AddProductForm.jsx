@@ -67,7 +67,7 @@ const AddProductForm = () => {
           name="itemName"
           value={itemName}
           className="textfield"
-          label="Item title"
+          label="Item Title"
           variant="outlined"
           type="text"
         />
@@ -87,7 +87,7 @@ const AddProductForm = () => {
           onChange={handleChange}
           name="description"
           value={description}
-          className="textfeild"
+          className="textfield"
           label="Description"
           rows={4}
           variant="outlined"
@@ -111,7 +111,7 @@ const AddProductForm = () => {
           name="itemType"
           value={itemType}
           className="textfield"
-          label="Item type "
+          label="Item Type "
           variant="outlined"
           type="text"
         >

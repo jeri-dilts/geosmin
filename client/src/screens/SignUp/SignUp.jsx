@@ -4,6 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import Layout from "../../components/shared/Layout/Layout";
 import Button from "@material-ui/core/Button";
 import { signUp, login } from "../../services/users";
+import {NavLink} from 'react-router-dom';
 import "./SignUp.css";
 
 const SignUp = (props) => {
@@ -55,8 +56,8 @@ const SignUp = (props) => {
       );
     } else { 
       return (
-        <Button type='submit' className="signup-button" variant="contained">
-          Signup
+        <Button type='submit' className="signup-button" variant="contained" color="secondary">
+          Create
         </Button>
       );
     }
@@ -66,6 +67,10 @@ const SignUp = (props) => {
   return (
     <Layout>
       <div className="signup-div">
+      <div className='create-text'>
+          <h3 className='create-header'>Create account.</h3>
+          <h6 className='login-header-signup'>Already have an account?  <NavLink to='/login'>Login</NavLink></h6>
+        </div>
         <form onSubmit={onSignUp} className="signup-form">
           <TextField
             required

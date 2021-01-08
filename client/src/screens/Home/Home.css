@@ -1,9 +1,9 @@
 .home-image{
-    position: absolute;
+    position: fixed;
     top:4rem;
     left: 0;
     width: 100vw;
-    height: 40vw;
+    height: 350px;
     object-fit: cover;
     opacity: 50%;
     z-index: 0;
@@ -12,25 +12,33 @@
 .product-row{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 40px;
     position: relative;
-    top: 30vh;
+    z-index:1;
+    top: 450px;
 }
 
-.topIMG{
+.mushroomIMG{
     height: 300px;
     width: 200px;
     object-fit: cover;
+    margin:10px;
+}
+
+.microgreenIMG {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    margin: 10px;
 }
 
 .allIMG {
     height: 300px;
     width: 200px;
     object-fit: cover;
+    margin: 10px;
 }
 
-.featuredIMG {
-    height: 300px;
-    width: 200px;
-    object-fit: cover;
+.collection-title{
+    font-size:16px;
+    text-align: center;
 }

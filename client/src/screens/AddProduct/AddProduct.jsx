@@ -5,7 +5,7 @@ import Layout from '../../components/shared/Layout/Layout';
 const AddProduct = (props) => {
   return (
     <Layout username={props.user}>
-    <div>
+    <div class='addproduct'>
       <AddProductForm />
     </div>
     </Layout>

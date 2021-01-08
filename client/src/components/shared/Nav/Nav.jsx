@@ -9,10 +9,10 @@ const Nav = (props) => {
       <div class='header'>
       <div className='usernav'>
         <div className='navmenu'>
-          <NavLink className="navprod" to="/login">
+          <NavLink className="navlogin" to="/login">
             Login
           </NavLink>
-          <NavLink className="navadd" to="/signup">
+          <NavLink className="navsignup" to="/signup">
             Signup
           </NavLink>
           </div>
@@ -20,7 +20,7 @@ const Nav = (props) => {
       </div>
       <div className="logo-div">
         <NavLink className="logo" to="/">
-          Geosmin
+          G e o s m i n
         </NavLink>
       </div>
     </nav>

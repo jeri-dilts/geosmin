@@ -4,6 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import Layout from "../../components/shared/Layout/Layout";
 import Button from "@material-ui/core/Button";
 import { login } from "../../services/users";
+import {NavLink} from 'react-router-dom';
 import "./Login.css";
 
 
@@ -59,7 +60,7 @@ const Login = (props) => {
       );
     } else {
       return (
-        <Button type='submit' className="login-button" variant="contained">
+        <Button type='submit' className="login-button" variant="contained" color="secondary">
           Login
         </Button>
       );
@@ -71,6 +72,10 @@ const Login = (props) => {
   return (
     <Layout>
       <div className="login-div">
+        <div className='login-text'>
+          <h3 className='login-header'>Login to your account.</h3>
+          <h6 className='signup-header'>Don't have one?  <NavLink to='/signup'>Signup</NavLink></h6>
+        </div>
         <form className="login-form" onSubmit={onLogin}>
           <TextField
             required

@@ -10,11 +10,11 @@ const UserNav = (props) => {
         <div className='user'> 
         Welcome {props.username.username}!
         </div>
-        <div className='navmenu'>
+        <div className='navmenuadmin'>
           <NavLink className="navlogin" to="/products">
             All Products
           </NavLink>
-          <NavLink className="navsignup" to="/add">
+          <NavLink className="navadd" to="/add">
             Add Product
           </NavLink>
           <NavLink className="navsignout" to="/signout">
@@ -25,7 +25,7 @@ const UserNav = (props) => {
       </div>
       <div className="logo-div">
         <NavLink className="logo" to="/">
-          Geosmin
+          G e o s m i n
         </NavLink>
       </div>
       
