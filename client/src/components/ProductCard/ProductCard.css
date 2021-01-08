@@ -14,6 +14,7 @@
   justify-content: space-evenly;
   width: 15vw;
   height: 260px;
+  align-items: flex-start;
 }
 
 .card {
@@ -23,14 +24,17 @@
 
 .card-imgURL {
   width: 150px;
-  height: 150px;
+  height: 250px;
   object-fit: cover;
   margin-top: 10px;
+  justify-content: space-evenly;
 }
 
 .card-title {
-  margin-top: 10px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
+  height: 40px;
+  justify-self: flex-end;
+  margin-top:5px;
 }
