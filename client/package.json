@@ -14,6 +14,7 @@
     "react-alice-carousel": "^2.2.0",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "^17.0.1",
+    "react-instagram-authless-feed": "github:jamesmoriarty/react-instagram-authless-feed",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"

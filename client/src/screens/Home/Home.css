@@ -3,7 +3,7 @@
     top:4rem;
     left: 0;
     width: 100vw;
-    height: 350px;
+    height: 380px;
     object-fit: cover;
     opacity: 50%;
     z-index: 0;
@@ -15,6 +15,7 @@
     position: relative;
     z-index:1;
     top: 450px;
+    background: white;
 }
 
 .mushroomIMG{
@@ -42,6 +43,7 @@
     font-size:16px;
     text-align: center;
 }
+
 .carousel{
   width: 20vw;
 }
@@ -51,3 +53,31 @@
   object-fit: cover;
   margin: 10px;
 }
+
+.content{
+    position: relative;
+    top: 500px;
+    background-color: white;
+}
+
+
+
+/* ---------------------------------- parallax ---------------------------------- */
+body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url("https://images.unsplash.com/photo-1559825481-12a05cc00344?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat; /* no-repeat */
+    background-size: cover;
+  }
+

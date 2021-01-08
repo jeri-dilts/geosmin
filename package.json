@@ -28,6 +28,7 @@
     "jwt-decode": "^3.1.2",
     "mongoose": "^5.11.10",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "react-instagram-authless-feed": "github:jamesmoriarty/react-instagram-authless-feed"
   }
 }

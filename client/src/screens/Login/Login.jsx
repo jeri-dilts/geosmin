@@ -74,7 +74,7 @@ const Login = (props) => {
       <div className="login-div">
         <div className='login-text'>
           <h3 className='login-header'>Login to your account.</h3>
-          <h6 className='signup-header'>Don't have one?  <NavLink to='/signup'>Signup</NavLink></h6>
+          <h6 className='signup-header'>Don't have one?  <NavLink className='login-link' to='/signup'>Signup</NavLink></h6>
         </div>
         <form className="login-form" onSubmit={onLogin}>
           <TextField
