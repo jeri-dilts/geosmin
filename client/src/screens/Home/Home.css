@@ -13,45 +13,42 @@
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    z-index:1;
     top: 450px;
     background: white;
-}
-
-.mushroomIMG{
-    height: 400px;
-    width: 300px;
-    object-fit: cover;
-    margin:10px;
-}
-
-.microgreenIMG {
-    height: 400px;
-    width: 300px;
-    object-fit: cover;
-    margin: 10px;
-}
-
-.allIMG {
-    height: 400px;
-    width: 300px;
-    object-fit: cover;
-    margin: 10px;
+    height: 600px;
 }
 
 .collection-title{
     font-size:16px;
     text-align: center;
+    position: relative;
+    top: 225px;
+    z-index: 2;
 }
 
 .carousel{
   width: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+
+.carousel-images{
+    height:400px;
+    width:300px;
+    object-fit:cover;
+}
+
 .sliderimg{
   height: 400px;
   width: 300px;
   object-fit: cover;
   margin: 10px;
+  opacity:50%;
+}
+
+.sliderimg:hover{
+    opacity:100%;
 }
 
 .content{
