@@ -2,3 +2,9 @@
   min-height: 100vh;
   background-color: #E0E2DB;
 }
+
+.sliderimg{
+  width: 20vw;
+  height: 500px;
+  object-fit:cover;
+}
