@@ -6,6 +6,8 @@ import Button from "@material-ui/core/Button";
 import { login } from "../../services/users";
 import {NavLink} from 'react-router-dom';
 import "./Login.css";
+import Logo from '../../components/shared/Logo/Logo';
+import Footer from '../../components/shared/Footer/Footer';
 
 
 
@@ -71,6 +73,7 @@ const Login = (props) => {
 
   return (
     <Layout>
+      <Logo />
       <div className="login-div">
         <div className='login-text'>
           <h3 className='login-header'>Login to your account.</h3>
@@ -99,6 +102,7 @@ const Login = (props) => {
           {renderError()}
         </form>
       </div>
+      <Footer />
     </Layout>
   );
 };

@@ -2,7 +2,8 @@
   display: grid;
   grid-column: repeat(2 auto);
   grid-row: repeat(3 auto);
-  position: relative;
+  margin-top: 200px;
+  height: 100vh;
   top: 200px;
 }
 
