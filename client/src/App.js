@@ -13,6 +13,7 @@ import SignUp from "./screens/SignUp/SignUp";
 import { verifyUser } from "./services/users";
 import SignOut from "./screens/SignOut/SignOut";
 import AboutUs from './screens/AboutUs/AboutUs';
+import ContactUs from "./screens/ContactUs/ContactUs";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -56,6 +57,9 @@ function App() {
         </Route>
         <Route path="/aboutus">
           <AboutUs user={user} />
+        </Route>
+        <Route path="/contactus">
+          <ContactUs user={user} />
         </Route>
       </Switch>
     </div>

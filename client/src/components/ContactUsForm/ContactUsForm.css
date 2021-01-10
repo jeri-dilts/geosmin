@@ -1,0 +1,19 @@
+.CU-div {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.CU-form {
+  width: 25vw;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textfield{
+  width: auto;
+}
