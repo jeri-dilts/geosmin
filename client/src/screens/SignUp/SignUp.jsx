@@ -6,6 +6,8 @@ import Button from "@material-ui/core/Button";
 import { signUp, login } from "../../services/users";
 import {NavLink} from 'react-router-dom';
 import "./SignUp.css";
+import Logo from '../../components/shared/Logo/Logo';
+import Footer from '../../components/shared/Footer/Footer';
 
 const SignUp = (props) => {
   const history = useHistory();
@@ -66,6 +68,7 @@ const SignUp = (props) => {
   const { email, username, password, passwordConfirmation } = form;
   return (
     <Layout>
+      <Logo />
       <div className="signup-div">
       <div className='create-text'>
           <h3 className='create-header'>Create account.</h3>
@@ -115,6 +118,7 @@ const SignUp = (props) => {
           {renderError()}
         </form>
       </div>
+      <Footer />
     </Layout>
   );
 };

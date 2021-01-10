@@ -3,7 +3,8 @@
 .header {
   height: 4rem;
   width: 100vw;
-  background-color: #264653;
+  background-color: black;
+  /* opacity: 60%; */
   position: sticky;
   top:0;
   left:0;
