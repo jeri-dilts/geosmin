@@ -7,7 +7,7 @@
   position: sticky;
   top:0;
   left:0;
-  z-index:2;
+  z-index:3;
   display: grid;
   grid-row: repeat(3 auto);
   font-family: "Krona One", sans-serif;
