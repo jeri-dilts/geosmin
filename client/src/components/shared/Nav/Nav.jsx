@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 const Nav = (props) => {
 
   return (
-    <nav>
       <div class='header'>
       <div className='usernav'>
         <div className='navmenu'>
@@ -18,12 +17,6 @@ const Nav = (props) => {
           </div>
         </div>
       </div>
-      <div className="logo-div">
-        <NavLink className="logo" to="/">
-          G e o s m i n
-        </NavLink>
-      </div>
-    </nav>
   );
 };
 

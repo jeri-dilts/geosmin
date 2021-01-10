@@ -8,10 +8,13 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import Carousel from "../../components/Carousel/Carousel";
 import Carousel2 from '../../components/Carousel2/Carousel2';
 import Carousel3 from '../../components/Carousel3/Carousel3';
+import Logo from '../../components/shared/Logo/Logo';
 
 const Home = (props) => {
   return (
     <Layout username={props.user}>
+      <div>
+        <Logo />
       <div className="homeIMG">
         <img
           className="home-image"
@@ -19,8 +22,7 @@ const Home = (props) => {
           alt=""
         />
       </div>
-      <div class="parallax">
-        
+      <div class='product-row-top'>
       <div className="product-row">
         <div className="carousel1">
           <p className="collection-title">Gourmet Mushrooms</p>
@@ -35,6 +37,8 @@ const Home = (props) => {
             <Carousel3 />
         </div>
       </div>
+      </div>
+      <div class="parallax">
         <div className="content">
           <p>
             {" "}
@@ -52,7 +56,9 @@ const Home = (props) => {
           </p>
         </div>
       </div>
+      </div>
     </Layout>
+    
   );
 };
 

@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+.logo-div {
+    margin-top: 20px;
+    width: 30vw;
+    position:absolute;
+    z-index: 1;
+    font-family: "Krona One", sans-serif;
+  }
+  
+  .logo {
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+  }

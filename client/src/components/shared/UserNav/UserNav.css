@@ -1,33 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
 
-nav {
-  display: grid;
-  grid-row: repeat(3 auto);
-  font-family: "Krona One", sans-serif;
-}
-
 .header {
   height: 4rem;
   width: 100vw;
   background-color: #264653;
-  position: fixed;
-}
-
-.logo-div {
-  margin-top: 20px;
-  width: 30vw;
-  grid-column-start: 1;
-  z-index: 1;
-  position: fixed;
-  top: 7%;
-}
-
-.logo {
-  font-size: 35px;
-  text-decoration: none;
-  color: black;
-  justify-content: flex-start;
-  margin-left: 15px;
+  position: sticky;
+  top:0;
+  left:0;
+  z-index:2;
+  display: grid;
+  grid-row: repeat(3 auto);
+  font-family: "Krona One", sans-serif;
 }
 
 .usernav {
