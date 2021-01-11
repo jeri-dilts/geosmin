@@ -20,7 +20,6 @@ const ProductDetail = (props) => {
   useEffect(() => {
     const fetchProduct = async () => {
       const product = await getProduct(id);
-      console.log(product);
       setProduct(product);
       setLoaded(true);
     };

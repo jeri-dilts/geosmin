@@ -7,9 +7,9 @@ import image3 from "./Images/Microgreen3.jpg";
 
 const Carousel = () => {
   const items = [
-    <img src={image1} className="sliderimg" />,
-    <img src={image2} className="sliderimg" />,
-    <img src={image3} className="sliderimg" />,
+    <img src={image1} className="sliderimg" alt='' />,
+    <img src={image2} className="sliderimg" alt='' />,
+    <img src={image3} className="sliderimg" alt='' />,
   ];
 
   return (

@@ -9,10 +9,10 @@ import { NavLink } from "react-router-dom";
 
 const Carousel3 = () => {
   const items = [
-    <img src={image1} className="sliderimg" />,
-    <img src={image2} className="sliderimg" />,
-    <img src={image3} className="sliderimg" />,
-    <img src={image4} className="sliderimg" />,
+    <img src={image1} className="sliderimg" alt=''/>,
+    <img src={image2} className="sliderimg" alt=''/>,
+    <img src={image3} className="sliderimg" alt=''/>,
+    <img src={image4} className="sliderimg" alt=''/>,
   ];
 
   return (
