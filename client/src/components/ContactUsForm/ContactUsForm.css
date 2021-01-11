@@ -7,11 +7,8 @@
 }
 
 .CU-form {
-  width: 25vw;
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .textfield{

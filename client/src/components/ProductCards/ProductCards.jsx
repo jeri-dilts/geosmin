@@ -9,7 +9,6 @@ const ProductCards = () => {
   useEffect(() => {
     const productsResponse = async () => {
       const response = await getProducts();
-      console.log(response);
       setProducts(response);
     };
     productsResponse();
@@ -24,7 +23,7 @@ const ProductCards = () => {
         key={index}
       />
     ) : (
-      <h1>Loading....</h1>
+      <h1 key='1000'>Loading....</h1>
     )
   );
 
