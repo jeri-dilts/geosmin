@@ -2,27 +2,21 @@ import React from "react";
 import "./Nav.css";
 import { NavLink } from "react-router-dom";
 
-const Nav = () => {
+const Nav = (props) => {
+
   return (
-    <nav>
-      <div className="header"></div>
-      <div className="nav">
-        <NavLink className="logo" to="/">
-          Geosmin
-        </NavLink>
-        <div className="search">Search</div>
-        <div>
-          <NavLink className="link" to="/login">
+      <div className='header'>
+      <div className='usernav'>
+        <div className='navmenu'>
+          <NavLink className="navlogin" to="/login">
             Login
           </NavLink>
-        </div>
-        <div>
-          <NavLink className="link" to="/signup">
-            SignUp
+          <NavLink className="navsignup" to="/signup">
+            Signup
           </NavLink>
+          </div>
         </div>
       </div>
-    </nav>
   );
 };
 

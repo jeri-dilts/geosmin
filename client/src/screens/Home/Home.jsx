@@ -1,43 +1,43 @@
 import React from "react";
 import "./Home.css";
 import Layout from "../../components/shared/Layout/Layout";
-import ProductCards from "../../components/ProductCards/ProductCards";
-import { NavLink } from "react-router-dom";
+import Footer from "../../components/shared/Footer/Footer";
+import "react-alice-carousel/lib/alice-carousel.css";
+import Carousel from "../../components/Carousel/Carousel";
+import Carousel2 from "../../components/Carousel2/Carousel2";
+import Carousel3 from "../../components/Carousel3/Carousel3";
+import Logo from "../../components/shared/Logo/Logo";
 
-const Home = () => {
+const Home = (props) => {
   return (
-    <Layout>
-      <div className="homeIMG">
-        <img
-          className="home-image"
-          src="https://images.unsplash.com/photo-1582095128060-e9ca8130cc6b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
-        />
-      </div>
-      <div className="product-row">
-        <div className="top">
-          <h2>Top Sellers</h2>
+    <Layout username={props.user}>
+      <div>
+        <Logo />
+        <div className="homeIMG">
           <img
-            className="topIMG"
-            src="https://images.unsplash.com/photo-1558616629-899031969d5e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+            className="home-image"
+            src="https://images.unsplash.com/photo-1600995942515-98058aab6ed1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+            alt=""
           />
         </div>
-        <div className="featured">
-          <h2>New & Featured</h2>
-          <img
-            className="featuredIMG"
-            src="https://images.unsplash.com/photo-1593850685222-689a0efd7957?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-          />
-        </div>
-        <div className="all" to="/products">
-          <h2>All Products</h2>
-          <NavLink to="/products">
-            <img
-              className="allIMG"
-              src="https://images.unsplash.com/photo-1501169527804-c216a681aab8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-            />
-          </NavLink>
+        <div className="product-row-top">
+          <div className="product-row">
+            <div className="carousel1">
+              <p className="collection-title">Gourmet Mushrooms</p>
+              <Carousel />
+            </div>
+            <div className="carousel2">
+              <p className="collection-title">Microgreens</p>
+              <Carousel2 />
+            </div>
+            <div className="carousel3">
+              <p className="collection-title">All Products</p>
+              <Carousel3 />
+            </div>
+          </div>
         </div>
       </div>
+      <Footer />
     </Layout>
   );
 };

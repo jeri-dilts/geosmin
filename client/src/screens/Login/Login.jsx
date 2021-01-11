@@ -4,7 +4,10 @@ import TextField from "@material-ui/core/TextField";
 import Layout from "../../components/shared/Layout/Layout";
 import Button from "@material-ui/core/Button";
 import { login } from "../../services/users";
+import {NavLink} from 'react-router-dom';
 import "./Login.css";
+import Logo from '../../components/shared/Logo/Logo';
+import Footer from '../../components/shared/Footer/Footer';
 
 
 
@@ -35,7 +38,6 @@ const Login = (props) => {
     login(form)
       .then((user) => {
         setUser(user);
-        console.log(user);
       })
       .then(() => history.push("/"))
       .catch((error) => {
@@ -60,7 +62,7 @@ const Login = (props) => {
       );
     } else {
       return (
-        <Button type='submit' className="login-button" variant="contained">
+        <Button type='submit' className="login-button" variant="contained" color="secondary">
           Login
         </Button>
       );
@@ -71,14 +73,18 @@ const Login = (props) => {
 
   return (
     <Layout>
+      <Logo />
       <div className="login-div">
+        <div className='login-text'>
+          <h3 className='login-header'>Login to your account.</h3>
+          <h6 className='signup-header'>Don't have one?  <NavLink className='login-link' to='/signup'>Signup</NavLink></h6>
+        </div>
         <form className="login-form" onSubmit={onLogin}>
           <TextField
             required
             onChange={handleChange}
             name='username'
             value={username}
-            className="login-field"
             label="Username"
             variant="outlined"
           />
@@ -87,7 +93,6 @@ const Login = (props) => {
             onChange={handleChange}
             name='password'
             value={password}
-            className="login-field"
             label="Password"
             variant="outlined"
             type="password"
@@ -95,6 +100,7 @@ const Login = (props) => {
           {renderError()}
         </form>
       </div>
+      <Footer />
     </Layout>
   );
 };

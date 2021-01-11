@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+.header {
+  height: 4rem;
+  width: 100vw;
+  background-color: black;
+  /* opacity: 60%; */
+  position: sticky;
+  top:0;
+  left:0;
+  z-index:3;
+  display: grid;
+  grid-row: repeat(3 auto);
+  font-family: "Krona One", sans-serif;
+}
+
+.usernav {
+  width: 100vw;
+  display: grid;
+  grid-row: repeat(2 auto);
+}
+
+.user {
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  padding-top: 10px;
+  grid-column-start: 5;
+  grid-row-start: 1;
+  text-align: center;
+  margin-top:5px;
+  padding-left:15px;
+}
+
+.navmenu{
+  grid-row-start:2;
+  grid-column-start:5;
+  margin-top: 35px;
+  margin-right: 15px;
+  text-align: right;
+  color:white;
+}
+
+.navmenuadmin{
+  grid-row-start:2;
+  grid-column-start:5;
+  margin-top: 5px;
+  margin-right: 15px;
+  text-align: right;
+  color:white;
+}
+
+.navprod {
+  font-size: 10px;
+  text-decoration: none;
+  grid-row-start: 2;
+  grid-column-start: 3;
+  margin: 10px;
+  color:white;
+}
+
+.navadd {
+  font-size: 12px;
+  text-decoration: none;
+  grid-row-start: 2;
+  grid-column-start: 4;
+  margin: 10px;
+  color:white;
+}
+
+.navlogin {
+  font-size: 12px;
+  text-decoration: none;
+  grid-row-start: 2;
+  grid-column-start: 3;
+  margin: 10px;
+  color:white;
+}
+
+.navsignup {
+  font-size: 12px;
+  text-decoration: none;
+  grid-row-start: 2;
+  grid-column-start: 4;
+  margin: 10px;
+  color:white;
+}
+
+.navsignout {
+  font-size: 12px;
+  text-decoration: none;
+  grid-row-start: 2;
+  grid-column-start: 5;
+  margin: 10px;
+  color:white;
+}

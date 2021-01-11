@@ -4,7 +4,10 @@ import TextField from "@material-ui/core/TextField";
 import Layout from "../../components/shared/Layout/Layout";
 import Button from "@material-ui/core/Button";
 import { signUp, login } from "../../services/users";
+import {NavLink} from 'react-router-dom';
 import "./SignUp.css";
+import Logo from '../../components/shared/Logo/Logo';
+import Footer from '../../components/shared/Footer/Footer';
 
 const SignUp = (props) => {
   const history = useHistory();
@@ -55,8 +58,8 @@ const SignUp = (props) => {
       );
     } else { 
       return (
-        <Button type='submit' className="signup-button" variant="contained">
-          Signup
+        <Button type='submit' className="signup-button" variant="contained" color="secondary">
+          Create
         </Button>
       );
     }
@@ -65,11 +68,15 @@ const SignUp = (props) => {
   const { email, username, password, passwordConfirmation } = form;
   return (
     <Layout>
+      <Logo />
       <div className="signup-div">
+      <div className='create-text'>
+          <h3 className='create-header'>Create account.</h3>
+          <h6 className='login-header-signup'>Already have an account?  <NavLink className='login-link' to='/login'>Login</NavLink></h6>
+        </div>
         <form onSubmit={onSignUp} className="signup-form">
           <TextField
             required
-            className="signup-field"
             name="username"
             value={username}
             label="Username"
@@ -79,7 +86,6 @@ const SignUp = (props) => {
           />
           <TextField
             required
-            className="signup-field"
             name="email"
             value={email}
             label="Email"
@@ -89,7 +95,6 @@ const SignUp = (props) => {
           />
           <TextField
             required
-            className="signup-field"
             name="password"
             value={password}
             label="Password"
@@ -99,7 +104,6 @@ const SignUp = (props) => {
           />
           <TextField
             required
-            className="signup-field"
             name="passwordConfirmation"
             value={passwordConfirmation}
             label="Password Confirmation"
@@ -110,6 +114,8 @@ const SignUp = (props) => {
           {renderError()}
         </form>
       </div>
+
+      <Footer />
     </Layout>
   );
 };

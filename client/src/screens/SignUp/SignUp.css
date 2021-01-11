@@ -1,21 +1,51 @@
-* {
-  margin: 0;
-}
-.signup-button {
-  height: 55px;
-  width: 20vw;
-  margin-top: 10px;
-}
-.signup-form{
-  width: 22vw;
-}
 .signup-div {
+  display: grid;
+  grid-column: repeat(2 auto);
+  grid-row: repeat(3 auto);
+  margin-top: 200px;
+  width: 50vw;
+  top: 200px;
+  overflow: auto;
+  padding-bottom: 4rem;
+  height: 70vh;
+}
+
+.create-text{
+  grid-column-start:1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
 }
-.signup-field{
-  width: 20vw;
+
+.create-header{
+  font-size: 24px;
+}
+
+.login-header-signup{
+  grid-row-start:2;
+  text-decoration: none;
+  font-size: 14px;
+  color:  #424242;
+  }
+
+.login-link{
+text-decoration: none;
+color:#f50057;
+font-size:14px;
+}
+
+.signup-form{
+  width: 300px;
+  grid-column-start: 2;
+}
+
+.signup-button {
+  height: 55px;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.MuiInputBase-root{
   margin-bottom: 10px;
 }

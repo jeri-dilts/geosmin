@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+.logo-div {
+    top: 100px;
+    height:75px;
+    width: 30vw;
+    z-index: 2;
+    font-family: "Krona One", sans-serif;
+    background-color: transparent;
+    position:absolute;
+  }
+  
+  .logo {
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    position: sticky;
+  }
+
+  .geosmin-logo{
+      height:100px;
+      width:auto;
+  }

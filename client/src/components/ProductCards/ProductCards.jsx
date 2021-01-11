@@ -9,7 +9,6 @@ const ProductCards = () => {
   useEffect(() => {
     const productsResponse = async () => {
       const response = await getProducts();
-      console.log(response);
       setProducts(response);
     };
     productsResponse();
@@ -19,12 +18,12 @@ const ProductCards = () => {
     index < 8 ? (
       <ProductCard
         _id={product._id}
-        title={product.title}
+        itemName={product.itemName}
         imgURL={product.imgURL}
         key={index}
       />
     ) : (
-      <h1>Loading....</h1>
+      <h1 key='1000'>Loading....</h1>
     )
   );
 

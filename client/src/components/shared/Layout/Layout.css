@@ -1,3 +1,6 @@
-* {
-  margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Krona+One&family=ZCOOL+XiaoWei&display=swap');
+
+*{
+  max-width: 1500px;
+margin: 0 auto;
 }
