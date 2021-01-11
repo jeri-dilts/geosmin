@@ -85,7 +85,6 @@ const Login = (props) => {
             onChange={handleChange}
             name='username'
             value={username}
-            className="login-field"
             label="Username"
             variant="outlined"
           />
@@ -94,7 +93,6 @@ const Login = (props) => {
             onChange={handleChange}
             name='password'
             value={password}
-            className="login-field"
             label="Password"
             variant="outlined"
             type="password"

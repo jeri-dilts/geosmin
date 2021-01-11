@@ -77,7 +77,6 @@ const SignUp = (props) => {
         <form onSubmit={onSignUp} className="signup-form">
           <TextField
             required
-            className="signup-field"
             name="username"
             value={username}
             label="Username"
@@ -87,7 +86,6 @@ const SignUp = (props) => {
           />
           <TextField
             required
-            className="signup-field"
             name="email"
             value={email}
             label="Email"
@@ -97,7 +95,6 @@ const SignUp = (props) => {
           />
           <TextField
             required
-            className="signup-field"
             name="password"
             value={password}
             label="Password"
@@ -107,7 +104,6 @@ const SignUp = (props) => {
           />
           <TextField
             required
-            className="signup-field"
             name="passwordConfirmation"
             value={passwordConfirmation}
             label="Password Confirmation"
@@ -118,6 +114,7 @@ const SignUp = (props) => {
           {renderError()}
         </form>
       </div>
+
       <Footer />
     </Layout>
   );

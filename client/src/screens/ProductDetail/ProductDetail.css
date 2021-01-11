@@ -1,69 +1,83 @@
-.product-detail{
+.product-detail-div {
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  margin-top: 150px;
+  width: 100vw;
+}
+
+.product-detail {
   display: grid;
   grid-template-columns: repeat(3 auto);
-  position: relative;
+  height: 800px;
   top: 10rem;
   width: 100vw;
   justify-content: center;
+  margin-top:25px;
 }
 
-.image-div{
-  width: 450px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-}
-
-.product-detail-image{
-  height:500px;
-  width:350px;
-  object-fit: cover;
-  grid-column-start:1;
-}
-
-.detail{
-  grid-column-start: 2;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-}
-
-.title{
-grid-row-start: 1;
-font-size: 20px;
-}
-
-.detail-price{
-  grid-row-start: 2;
-}
-
-.description{
-grid-row-start:3;
-height: 200px;
-font-size: 14px;
-}
-
-.button-div{
+.product-detail-image {
+  grid-row: 1 / span 4;
   grid-column-start: 1;
-  grid-row-start:2;
-  text-align: center;
-  margin-top:10px;
-  display:flex;
-  justify-content: space-evenly;
+  height: 500px;
+  width: 350px;
+  object-fit: cover;
+  margin: 0 35px;
 }
 
-.edit-button-detail{
-  grid-row-start:3;
+.product-info{
+  grid-column-start: 2;
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+}
+.title {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  font-size: 26px;
+  height:26px;
+  margin:0;
+}
+
+.price {
+margin:25px 0 5px 0;
+}
+
+.detail-price {
+  margin:0;
+}
+
+.description-title {
+  margin: 25px 0 10px 0;
+}
+
+.description {
+  height: 300px;
+  width: 300px;
+  font-size: 14px;
+}
+
+.button-div {
+  grid-column-start: 1;
+  height: 40px;
+  grid-row-start: 2;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  width:300px;
+}
+
+.edit-button-detail {
+  grid-row-start: 3;
   grid-column-start: 2;
   justify-items: flex-end;
 }
 
-.delete-button{
-  grid-row-start:3;
+.delete-button {
+  grid-row-start: 3;
   grid-column-start: 3;
 }
 
-
-.MuiButton-label{
-  color:white;
+.MuiButton-label {
+  color: white;
 }
