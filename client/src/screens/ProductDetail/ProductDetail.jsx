@@ -5,7 +5,6 @@ import { getProduct, deleteProduct } from "../../services/Products";
 import { useParams } from "react-router-dom";
 import { Button } from "@material-ui/core";
 import DeleteIcon from "@material-ui/icons/Delete";
-import Footer from "../../components/shared/Footer/Footer";
 import "./ProductDetail.css";
 import Logo from "../../components/shared/Logo/Logo";
 
@@ -71,7 +70,6 @@ const ProductDetail = (props) => {
         </div>
         </div>
       </div>
-      <Footer />
     </Layout>
   );
 };
