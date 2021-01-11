@@ -1,9 +1,6 @@
 .App {
   min-height: 100vh;
-}
-
-.sliderimg{
-  width: 20vw;
-  height: 500px;
-  object-fit:cover;
+  max-width: 1500px;
+  margin:0;
+  padding:0;
 }

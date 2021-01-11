@@ -11,6 +11,8 @@ import Layout from "../../components/shared/Layout/Layout";
 import MenuItem from '@material-ui/core/MenuItem';
 import SaveIcon from '@material-ui/icons/Save';
 import './EditProduct.css';
+import Footer from '../../components/shared/Footer/Footer';
+import Logo from '../../components/shared/Logo/Logo';
 
 const EditProduct = (props) => {
   const [product, setProduct] = useState({
@@ -63,13 +65,16 @@ const EditProduct = (props) => {
 
   return (
     <Layout user={props.user}>
+      <Logo />
+      <div className='product-edit-div'>
+
       <div className="product-edit">
         <div className="image-container">
           <img
             className="edit-product-image"
             src={product.imgURL}
             alt={product.name}
-          />
+            />
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
           <h4>Name</h4>
@@ -82,7 +87,7 @@ const EditProduct = (props) => {
             variant="outlined"
             autoFocus
             onChange={handleChange}
-          />
+            />
           <h4>Price</h4>
           <TextField
             className="input-price"
@@ -92,7 +97,7 @@ const EditProduct = (props) => {
             required
             variant="outlined"
             onChange={handleChange}
-          />
+            />
           <h4>Image URL</h4>
           <TextField
               placeholder="Image Link"
@@ -101,7 +106,7 @@ const EditProduct = (props) => {
               required
               variant="outlined"
               onChange={handleChange}
-            />
+              />
             <h4>Description</h4>
           <TextField
             className="textarea-description"
@@ -113,7 +118,7 @@ const EditProduct = (props) => {
             required
             variant="outlined"
             onChange={handleChange}
-          />
+            />
           <TextField
             required
             select
@@ -124,7 +129,7 @@ const EditProduct = (props) => {
             label="Item Type"
             variant="outlined"
             type="text"
-          >
+            >
             {" "}
             {type.map((option) => (
               <MenuItem key={option.value} value={option.value}>
@@ -137,6 +142,8 @@ const EditProduct = (props) => {
           </Button>
         </form>
       </div>
+            </div>
+      <Footer />
     </Layout>
   );
 };

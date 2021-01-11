@@ -3,8 +3,11 @@
   grid-column: repeat(2 auto);
   grid-row: repeat(3 auto);
   margin-top: 200px;
-  height: 100vh;
+  width: 50vw;
   top: 200px;
+  overflow: auto;
+  padding-bottom: 4rem;
+  height: 70vh;
 }
 
 .create-text{
@@ -33,18 +36,14 @@ font-size:14px;
 }
 
 .signup-form{
-  width: 22vw;
+  width: 300px;
   grid-column-start: 2;
 }
 
 .signup-button {
   height: 55px;
-  width: 20vw;
+  width: 150px;
   margin-top: 10px;
-}
-
-.signup-field{
-  width: 20vw;
 }
 
 .MuiInputBase-root{

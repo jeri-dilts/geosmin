@@ -3,8 +3,9 @@
   grid-column: repeat(2 auto);
   grid-row: repeat(3 auto);
   margin-top: 200px;
-  height: 100vh;
+  height: 70vh;
   top: 200px;
+  width: 50vw;
 }
 
 .login-text{
@@ -33,18 +34,14 @@ font-size:14px;
 }
 
 .login-form{
-  width: 22vw;
+  width: 250px;
   grid-column-start: 2;
 }
 
 .login-button {
   height: 55px;
-  width: 20vw;
+  width: 250px;
   margin-top: 10px;
-}
-
-.login-field{
-  width: 20vw;
 }
 
 .MuiInputBase-root{
