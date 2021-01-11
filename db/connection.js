@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 require('dotenv').config()
 console.log(process.env.USERNAME)
-let MONGODB_URI = process.env.PROD_MONGODB || `mongodb+srv://user:${process.env.USERNAME}@geosmin.i4xox.mongodb.net/${process.env.PASSWORD}?retryWrites=true&w=majority`
+let MONGODB_URI = process.env.PROD_MONGODB || 'mongodb://127.0.0.1:27017/geosmin'
 
 mongoose
   .connect(MONGODB_URI, { useUnifiedTopology: true, useNewUrlParser: true, })
