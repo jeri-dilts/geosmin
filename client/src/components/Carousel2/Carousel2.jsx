@@ -1,17 +1,13 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import image1 from "./Images/Mushroom1.jpg";
-import image2 from "./Images/Mushroom2.jpg";
-import image3 from "./Images/Mushroom3.jpg";
-import image4 from "./Images/Mushroom4.jpg";
 
 const Carousel2 = () => {
   const items = [
-    <img src={image1} className="sliderimg" alt=''/>,
-    <img src={image2} className="sliderimg" alt=''/>,
-    <img src={image3} className="sliderimg" alt=''/>,
-    <img src={image4} className="sliderimg" alt=''/>,
+    <img src='https://res.cloudinary.com/decd84s0g/image/upload/v1610393895/Geosmin/Mushroom1.jpg' className="sliderimg" alt=''/>,
+    <img src='https://res.cloudinary.com/decd84s0g/image/upload/v1610393894/Geosmin/Mushroom4.jpg' className="sliderimg" alt=''/>,
+    <img src='https://res.cloudinary.com/decd84s0g/image/upload/v1610393895/Geosmin/Mushroom2.jpg' className="sliderimg" alt=''/>,
+    <img src='https://res.cloudinary.com/decd84s0g/image/upload/v1610393950/Geosmin/Mushroom6.jpg' className="sliderimg" alt=''/>,
   ];
 
   return (
