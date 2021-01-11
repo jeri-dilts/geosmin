@@ -1,8 +1,7 @@
 import axios from 'axios'
-import api from 'apiConfig'
+import api from './apiConfig'
 
 
-//Think we need to remove the 'items' from the end of address to properly sort this
 // const apiURL = 'https://geosmin.herokuapp.com/api'
 const apiURL = 'http://localhost:3000/api'
 
@@ -53,5 +52,3 @@ export const deleteProduct = async id => {
         throw error
     }
 }
-
-//this is for axios calls

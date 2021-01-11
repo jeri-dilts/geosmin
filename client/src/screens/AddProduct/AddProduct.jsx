@@ -4,13 +4,13 @@ import Layout from '../../components/shared/Layout/Layout';
 
 const AddProduct = (props) => {
   return (
-    props.user :
-    <Layout username={props.user}>
-    <div class='addproduct'>
-      <AddProductForm />
-    </div>
-    </Layout>
-    ? <>Not Authorized</>
+    props.user ? 
+      <Layout username={props.user}>
+      <div class='addproduct'>
+        <AddProductForm />
+      </div>
+      </Layout>
+      :<>Not Authorized</>
   );
 };
 
