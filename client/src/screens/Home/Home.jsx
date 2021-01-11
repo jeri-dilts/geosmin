@@ -10,8 +10,9 @@ import Logo from "../../components/shared/Logo/Logo";
 const Home = (props) => {
   return (
     <Layout username={props.user}>
-      <div>
+      <div className='landing_page'>
         <Logo />
+        <h3 className="subheader">An Urban Farm Located in Richmond, VA</h3>
         <div className="homeIMG">
           <img
             className="home-image"
