@@ -5,7 +5,7 @@ import jwtDecode from 'jwt-decode'
 
 export const signUp = async credentials => {
   try {
-    console.log(credentials)
+    
     const resp = await api.post('/sign-up', credentials)
       localStorage.setItem('token', resp.data.token)
       const user = jwtDecode(resp.data.token)

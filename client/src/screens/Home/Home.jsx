@@ -2,6 +2,8 @@ import React from "react";
 import "./Home.css";
 import Layout from "../../components/shared/Layout/Layout";
 import Footer from "../../components/shared/Footer/Footer";
+import { NavLink } from "react-router-dom";
+import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import Carousel from "../../components/Carousel/Carousel";
 import Carousel2 from "../../components/Carousel2/Carousel2";
@@ -16,7 +18,7 @@ const Home = (props) => {
         <div className="homeIMG">
           <img
             className="home-image"
-            src="https://images.unsplash.com/photo-1600995942515-98058aab6ed1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+            src="https://res.cloudinary.com/decd84s0g/image/upload/v1610394401/Geosmin/header-image.jpg"
             alt=""
           />
         </div>
@@ -37,7 +39,6 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
     </Layout>
   );
 };

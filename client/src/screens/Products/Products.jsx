@@ -14,7 +14,6 @@ const Products = (props) => {
       <div className='all-products'>
         <ProductCards />
       </div>
-      <Footer />
     </Layout>
   );
 };
