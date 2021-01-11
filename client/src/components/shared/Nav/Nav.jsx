@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const Nav = (props) => {
 
   return (
-      <div class='header'>
+      <div className='header'>
       <div className='usernav'>
         <div className='navmenu'>
           <NavLink className="navlogin" to="/login">
