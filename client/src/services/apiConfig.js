@@ -13,9 +13,7 @@ const api = axios.create({
 })
 
 api.interceptors.request.use(async function (options) {
-  console.log(options.headers)
   options.headers['Authorization'] = await getToken()
-  console.log(options.headers)
   return options
 }, function (error) {
   console.log('Request error: ', error)
