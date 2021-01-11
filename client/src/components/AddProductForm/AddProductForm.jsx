@@ -5,6 +5,7 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import MenuItem from '@material-ui/core/MenuItem';
 import './AddProductForm.css'
 import { createProduct } from "../../services/Products";
+import { Redirect } from "react-router-dom";
 
 
 const AddProductForm = () => {
@@ -16,6 +17,8 @@ const AddProductForm = () => {
     price: "",
     itemType: ""
   });
+
+  const [isUpdated, setUpdated] = useState(false);
 
   const handleChange = (event) => {
     const {name, value} = event.target
@@ -37,8 +40,12 @@ const AddProductForm = () => {
   ];
   const onProductSubmit = (e) => {
     e.preventDefault();
-    
+    setUpdated(isUpdated);
     createProduct(form)
+  }
+
+  if (isUpdated) {
+    return <Redirect to={`/products`} />;
   }
 
   const renderError = () => {
