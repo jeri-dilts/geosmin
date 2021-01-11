@@ -1,32 +1,36 @@
-.footer-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: static;
-  width: 100vw;
-  height: 4rem;
-  background-color: #ecce83;
-  color: black;
+.footer {
+width: 100vw;
+height:3.5rem;
+position: absolute;
+bottom:0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #ecce83;
 }
 
-.footer-text {
-  display: grid;
-  justify-content: center;
-  margin: 5px;
-}
-.icons {
+.footer-contact-area {
   display: flex;
-  justify-content: center;
-  margin-bottom: 5px;
+  flex-direction: row;
 }
 
 .aboutUs {
-  grid-column-start: 1;
-  margin: 5px;
-  color: black;
+    grid-column-start: 1;
+    margin: 5px;
+    color: black;
+  }
+  
+  .contactUs {
+    grid-column-start: 2;
+    margin: 5px;
+  }
+
+.icon-area {
+  display: flex;
+  flex-direction: row;
 }
 
-.contactUs {
-  grid-column-start: 2;
-  margin: 5px;
+.insta_icon{
+    margin-right: 10px;
 }

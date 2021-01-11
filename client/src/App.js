@@ -41,7 +41,7 @@ function App() {
           <ProductDetail user={user} />
         </Route>
         <Route path="/product/edit/:id">
-          <EditProduct />
+          <EditProduct user={user}/>
         </Route>
         <Route path="/add">
           <AddProduct user={user} />

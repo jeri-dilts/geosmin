@@ -7,8 +7,8 @@ import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className="footer-div">
-      <div className="footer-text">
+    <div className="footer">
+      <div className="footer-contact-area">
         <NavLink to="/aboutus">
           <h6 className="aboutUs">About Us</h6>
         </NavLink>
@@ -16,12 +16,11 @@ export default function Footer() {
         <h6 className="contactUs">Contact Us</h6>
         </NavLink>
       </div>
-      <div className="icons">
+      <div className="icon-area">
         <a href='https://www.instagram.com/chestnutzack/?hl=en'>
-        <InstagramIcon />
+        <InstagramIcon className='insta_icon'/>
         </a>
-        <GithubIcon />
-        <FacebookIcon />
+        <FacebookIcon className='fb_icon' />
       </div>
     </div>
   );

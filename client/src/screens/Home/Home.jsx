@@ -39,7 +39,7 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </Layout>
   );
 };

@@ -8,7 +8,6 @@ const ContactUs = () => {
     <div>
       <Layout>
         <ContactUsForm />
-        <Footer />
       </Layout>
     </div>
   );

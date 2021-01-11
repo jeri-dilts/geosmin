@@ -63,8 +63,9 @@ const EditProduct = (props) => {
     return <Redirect to={`/product/${id}`} />;
   }
 
-  return (
-    <Layout user={props.user}>
+ return (
+
+    <Layout username={props.user}>
       <Logo />
       <div className='product-edit-div'>
 
@@ -143,7 +144,7 @@ const EditProduct = (props) => {
         </form>
       </div>
             </div>
-      <Footer />
+      {/* <Footer /> */}
     </Layout>
   );
 };

@@ -7,11 +7,13 @@ import {NavLink} from 'react-router-dom';
 
 const Layout = (props) => {
 
-console.log(props.username);
+console.log(props);
+
   return (
     <div className="layout">
       {props.username ? <UserNav username={ props.username}/> : <Nav />}
       <div className="layout-children">{props.children}</div>
+      <Footer />
     </div>
   );
 };
