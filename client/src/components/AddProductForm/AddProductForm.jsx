@@ -18,7 +18,6 @@ const AddProductForm = () => {
     itemType: ""
   });
 
-  const [isUpdated, setUpdated] = useState(false);
 
   const handleChange = (event) => {
     const {name, value} = event.target
@@ -40,12 +39,8 @@ const AddProductForm = () => {
   ];
   const onProductSubmit = (e) => {
     e.preventDefault();
-    setUpdated(isUpdated);
     createProduct(form)
-  }
-
-  if (isUpdated) {
-    return <Redirect to={`/products`} />;
+    return <Redirect to={`/products`} />
   }
 
   const renderError = () => {
