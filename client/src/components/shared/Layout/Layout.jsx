@@ -2,6 +2,7 @@ import React from "react";
 import "./Layout.css";
 import Nav from "../Nav/Nav";
 import UserNav from "../UserNav/UserNav";
+import Footer from '../../shared/Footer/Footer';
 
 const Layout = (props) => {
   return (
