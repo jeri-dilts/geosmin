@@ -4,10 +4,10 @@ import TextField from "@material-ui/core/TextField";
 import Layout from "../../components/shared/Layout/Layout";
 import Button from "@material-ui/core/Button";
 import { signUp, login } from "../../services/users";
-import {NavLink} from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import "./SignUp.css";
-import Logo from '../../components/shared/Logo/Logo';
-import Footer from '../../components/shared/Footer/Footer';
+import Logo from "../../components/shared/Logo/Logo";
+import Footer from "../../components/shared/Footer/Footer";
 
 const SignUp = (props) => {
   const history = useHistory();
@@ -51,14 +51,18 @@ const SignUp = (props) => {
     const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <Button type="submit" className={toggleForm}
-        variant="contained">
+        <Button type="submit" className={toggleForm} variant="contained">
           {form.errorMsg}
         </Button>
       );
-    } else { 
+    } else {
       return (
-        <Button type='submit' className="signup-button" variant="contained" color="secondary">
+        <Button
+          type="submit"
+          className="signup-button"
+          variant="contained"
+          color='primary'
+        >
           Create
         </Button>
       );
@@ -70,9 +74,14 @@ const SignUp = (props) => {
     <Layout>
       <Logo />
       <div className="signup-div">
-      <div className='create-text'>
-          <h3 className='create-header'>Create account.</h3>
-          <h6 className='login-header-signup'>Already have an account?  <NavLink className='login-link' to='/login'>Login</NavLink></h6>
+        <div className="create-text">
+          <h3 className="create-header">Create account.</h3>
+          <h6 className="login-header-signup">
+            Already have an account?{" "}
+            <NavLink className="login-link" to="/login">
+              Login
+            </NavLink>
+          </h6>
         </div>
         <form onSubmit={onSignUp} className="signup-form">
           <TextField
