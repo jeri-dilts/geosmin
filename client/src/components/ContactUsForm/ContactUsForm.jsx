@@ -68,7 +68,7 @@ const ContactUsForm = () => {
           onChange={handleChange}
           name="from_name"
           value={from_name}
-          className="textfield"
+          // className="textfield"
           label="Name"
           variant="outlined"
           type="text"
@@ -78,7 +78,7 @@ const ContactUsForm = () => {
           onChange={handleChange}
           name="from_email"
           value={from_email}
-          className="textfield"
+          // className="textfield"
           label="E-mail"
           variant="outlined"
           type="text"
@@ -89,7 +89,7 @@ const ContactUsForm = () => {
           onChange={handleChange}
           name="message"
           value={message}
-          className="textfield"
+          // className="textfield"
           label="Message"
           rows={4}
           variant="outlined"

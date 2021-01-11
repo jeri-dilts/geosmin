@@ -114,8 +114,6 @@ const SignUp = (props) => {
           {renderError()}
         </form>
       </div>
-
-      <Footer />
     </Layout>
   );
 };

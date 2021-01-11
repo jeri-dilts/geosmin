@@ -8,6 +8,7 @@ const Layout = (props) => {
     <div className="layout">
       {props.username ? <UserNav username={ props.username}/> : <Nav />}
       <div className="layout-children">{props.children}</div>
+      <Footer />
     </div>
   );
 };

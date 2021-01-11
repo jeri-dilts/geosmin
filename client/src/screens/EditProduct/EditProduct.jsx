@@ -62,9 +62,10 @@ const EditProduct = (props) => {
     return <Redirect to={`/product/${id}`} />;
   }
 
+
   return (
     props.user ?
-      <Layout user={props.user}>
+      <Layout username={props.user}>
         <Logo />
         <div className='product-edit-div'>
 
@@ -119,6 +120,7 @@ const EditProduct = (props) => {
               variant="outlined"
               onChange={handleChange}
               />
+
             <TextField
               required
               select
@@ -143,7 +145,6 @@ const EditProduct = (props) => {
           </form>
         </div>
               </div>
-        <Footer />
       </Layout>
     : <>Not Authorized</>
   );

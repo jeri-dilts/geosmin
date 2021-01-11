@@ -100,7 +100,7 @@ const Login = (props) => {
           {renderError()}
         </form>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </Layout>
   );
 };
