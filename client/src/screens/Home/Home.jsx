@@ -15,7 +15,7 @@ const Home = (props) => {
         <div className="homeIMG">
           <img
             className="home-image"
-            src="https://res.cloudinary.com/decd84s0g/image/upload/v1610394401/Geosmin/header-image.jpg"
+            src="https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/7b897d4321724b46b4369ca45666c344.jpg"
             alt=""
           />
         </div>
