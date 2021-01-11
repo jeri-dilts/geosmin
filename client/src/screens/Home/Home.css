@@ -1,6 +1,6 @@
 .homeIMG{
     position:fixed;
-    height:380px;
+    height:360px;
     z-index: 1;
     top:-1px;
     margin:0;
@@ -10,13 +10,21 @@
 .home-image{
     left: 0;
     width: 100vw;
-    height: 380px;
+    height: 360px;
     object-fit: cover;
     opacity: .8;
 }
 
+.subheader{
+    position: fixed;
+    top:215px;
+    z-index:3;
+    margin-left: 25px;
+    color: white;    
+}
+
 .product-row-top{
-    height: 900px;
+    height: 850px;
     position: static;
     z-index:0;
 }
@@ -25,7 +33,7 @@
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    top: 350px;
+    top: 325px;
     background: white;
     z-index:0;
 }
