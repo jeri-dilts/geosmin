@@ -1,9 +1,6 @@
 import React from "react";
 import "./Home.css";
 import Layout from "../../components/shared/Layout/Layout";
-import Footer from "../../components/shared/Footer/Footer";
-import { NavLink } from "react-router-dom";
-import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import Carousel from "../../components/Carousel/Carousel";
 import Carousel2 from "../../components/Carousel2/Carousel2";

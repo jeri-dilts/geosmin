@@ -7,7 +7,6 @@ import { login } from "../../services/users";
 import {NavLink} from 'react-router-dom';
 import "./Login.css";
 import Logo from '../../components/shared/Logo/Logo';
-import Footer from '../../components/shared/Footer/Footer';
 
 
 
