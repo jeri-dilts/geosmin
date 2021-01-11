@@ -7,7 +7,6 @@ import { signUp, login } from "../../services/users";
 import {NavLink} from 'react-router-dom';
 import "./SignUp.css";
 import Logo from '../../components/shared/Logo/Logo';
-import Footer from '../../components/shared/Footer/Footer';
 
 const SignUp = (props) => {
   const history = useHistory();
