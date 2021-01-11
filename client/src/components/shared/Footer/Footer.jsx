@@ -12,7 +12,9 @@ export default function Footer() {
         <NavLink to="/aboutus">
           <h6 className="aboutUs">About Us</h6>
         </NavLink>
+        <NavLink to='/contactus'>
         <h6 className="contactUs">Contact Us</h6>
+        </NavLink>
       </div>
       <div className="icons">
         <a href='https://www.instagram.com/chestnutzack/?hl=en'>
