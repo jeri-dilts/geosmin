@@ -2,7 +2,7 @@
 #### A gourmet mushroom and microgreen urban farm store
 
 ## Project Description
-[Geosmin](https://5ffdb8f6c014d50007610a2f--practical-rosalind-de2ffc.netlify.app/) is a vending React App collectively built by three team members. This online store exhibits authentication and full CRUD using Express, Mongoose, and MongoDB. In a git flow style we've adhered to strict [React Architecture](https://whimsical.com/geosmin-JrYPHSwt9kg2ss6g68mxCn) organization.
+[Geosmin](https://geosmin.netlify.app/) is a vending React App collectively built by three team members. This online store exhibits authentication and full CRUD using Express, Mongoose, and MongoDB. In a git flow style we've adhered to strict [React Architecture](https://whimsical.com/geosmin-JrYPHSwt9kg2ss6g68mxCn) organization.
 
 ## MVP
 ### Client (Front End)
