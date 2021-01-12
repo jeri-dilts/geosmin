@@ -1,6 +1,7 @@
 import React from "react";
 import "./UserNav.css";
 import { NavLink } from "react-router-dom";
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const UserNav = (props) => {
   return (
@@ -17,6 +18,7 @@ const UserNav = (props) => {
             <NavLink className="navsignout" to="/signout">
               SignOut
             </NavLink>
+            <ShoppingCartIcon />
           </div>
         </div>
       </div>

@@ -12,8 +12,8 @@ const Home = (props) => {
     <Layout username={props.user}>
       <div className="landing_page">
         <Logo />
-          <h3 className="subheader">Regenerative Biodynamic Farming</h3>
-          <h4 className="subheader2">Locally in Richmond, Southside</h4>
+          <div className="subheader">Regenerative Biodynamic Farming</div>
+          <div className="subheader2">Locally in Richmond, Southside</div>
           <div className="box"></div>
         <div className="homeIMG">
           <img
