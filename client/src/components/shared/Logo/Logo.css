@@ -7,7 +7,7 @@
     z-index: 2;
     font-family: "Krona One", sans-serif;
     background-color: transparent;
-    position:fixed;
+    position:absolute;
   }
   
   .logo {

@@ -1,3 +1,23 @@
-* {
-  margin: 0;
+.addproduct {
+margin-top:175px;
+display:flex;
+flex-flow: wrap;
+justify-content: center;
+}
+
+.add-product-text{
+margin: 0 25px 0 25px;
+}
+
+.formdiv{
+margin: 15px 25px 0 50px;
+}
+
+.add-header{
+  font-size: 24px;
+}
+
+.add-sub-header{
+color:yellowgreen;
+font-size:14px;
 }

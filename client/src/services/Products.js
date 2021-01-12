@@ -1,10 +1,9 @@
 import api from './apiConfig'
-import axios from 'axios'
 
 export const getProducts = async () => {
 
     try {
-        const response = await axios (`/items`)
+        const response = await api.get(`/items`)
         const products = response.data
         return products
     } catch (error) {
@@ -14,7 +13,7 @@ export const getProducts = async () => {
 
 export const getProduct = async id => {
     try {
-        const response = await axios.get(`/items/${id}`)
+        const response = await api.get(`/items/${id}`)
         const product = response.data
         return product
     } catch (error) {
