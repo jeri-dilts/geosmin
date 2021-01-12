@@ -67,7 +67,7 @@ const AddProductForm = () => {
   };
   const { itemName, imgURL, description, price, itemType } = form;
   return (
-    <div className="add-product-form">
+    // <div className="add-product-form">
       <form  className='form' onSubmit={onProductSubmit}>
         <TextField
           required
@@ -131,7 +131,7 @@ const AddProductForm = () => {
         </TextField>
         {renderError()}
       </form>
-    </div>
+    // </div>
   );
 };
 

@@ -15,12 +15,31 @@
     opacity: .8;
 }
 
-.subheader{
+.box{
     position: fixed;
     top:215px;
+    left:18px;
+    height: 55px;
+    width: 475px;
+    background: rgba(0,0,0,.4);
     z-index:3;
-    margin-left: 25px;
-    color: white;    
+}
+
+.subheader{
+    position: fixed;
+    color:white;
+    z-index:4;
+    top:220px;
+    left:35px;
+}
+
+.subheader2{
+    position: fixed;
+    color:white;
+    z-index:4;
+    top:245px;
+    left:35px;
+    font-size: 14px;
 }
 
 .product-row-top{
