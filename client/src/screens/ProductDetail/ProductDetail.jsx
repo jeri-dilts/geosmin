@@ -37,17 +37,18 @@ const ProductDetail = (props) => {
     <Layout username={props.user}>
       <Logo />
       <div className="product-detail-div">
-        <div className="product-detail">
+        <div className="image-div">
           <img
             className="product-detail-image"
             src={product.imgURL}
             alt={product.itemName}
           />
-          <div className='product-info'>
-          <div className="title">{product.itemName}</div>
-          <h4 className="price">Price</h4>
+        </div>
+        <div className="product-info">
+          <div className="product-title">{product.itemName}</div>
+          <div className="price">Price</div>
           <div className="detail-price">{product.price}</div>
-          <h4 className="description-title">Description</h4>
+          <div className="description-title">Description</div>
           <div className="description">{product.description}</div>
         </div>
 

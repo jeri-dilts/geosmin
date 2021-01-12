@@ -3,7 +3,9 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
   margin-top: 200px;
+  margin-bottom: 200px;
   height: 100vh;
-  width: 80vw;
+  width: 80%;
   top: 200px;
+  max-width: 1500px;
 }

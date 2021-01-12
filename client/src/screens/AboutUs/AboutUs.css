@@ -70,3 +70,10 @@
 h6{
     margin-top:10px;
 }
+
+@media only screen and (max-width: 940px){
+    .chestnut,.jeri,.hunter,.pak{
+        display: flex;
+        flex-direction: column;
+    }
+}
