@@ -50,6 +50,8 @@ const ProductDetail = (props) => {
           <h4 className="description-title">Description</h4>
           <div className="description">{product.description}</div>
         </div>
+
+        {props.user ? 
         <div className="button-div">
           <Button
             className="edit-button-detail"
@@ -68,6 +70,7 @@ const ProductDetail = (props) => {
             Delete
           </Button>
         </div>
+        : <></>}
         </div>
       </div>
     </Layout>
