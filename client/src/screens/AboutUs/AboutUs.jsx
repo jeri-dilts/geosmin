@@ -20,6 +20,7 @@ export default function AboutUs(props) {
           />
           <div className="title-icons">
           <h3 className="title">Zac</h3>
+          <h6>Owner</h6>
           </div>
           <div className="about">
             When an unknown printer took a galley of type and scrambled it to
@@ -38,9 +39,14 @@ export default function AboutUs(props) {
           </div>
           <div className="title-icons">
           <h3 className="title">Jeri</h3>
+          <h6>Jr. Dev</h6>
           <div className="icons">
+          <a href='https://github.com/jeri-dilts'>
           <GithubIcon />
+          </a>
+          < a href='https://www.linkedin.com/in/jeri-dilts-6b63181a1/'>
           <LinkedInIcon />
+          </a>
           </div>
           </div>
           <img
@@ -57,9 +63,14 @@ export default function AboutUs(props) {
           />
           <div className="title-icons">
           <h3 className="title">Hunter</h3>
+          <h6>Jr. Dev</h6>
           <div className="icons">
+            <a href='https://github.com/HunterMott'>
           <GithubIcon />
+          </a>
+          <a href='https://www.linkedin.com/in/huntermott/'>
           <LinkedInIcon />
+          </a>
           </div>
           </div>
           <div className="about">
@@ -90,9 +101,14 @@ export default function AboutUs(props) {
           </div>
           <div className="title-icons">
           <h3 className="title">Pak</h3>
+          <h6>Jr. Dev</h6>
           <div className="icons">
+            <a href='https://github.com/LLuth0r'>
           <GithubIcon />
+          </a>
+          <a href='https://www.linkedin.com/in/michael-pakulak-he-him-his-7372a05a/'>
           <LinkedInIcon />
+          </a>
           </div>
           </div>
           <img
