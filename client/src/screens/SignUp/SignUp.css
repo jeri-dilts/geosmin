@@ -1,33 +1,19 @@
 .signup-div {
-  display: grid;
-  grid-column: repeat(2 auto);
-  grid-row: repeat(3 auto);
-  margin-top: 200px;
-  width: 50vw;
-  top: 200px;
-  overflow: auto;
-  padding-bottom: 4rem;
-  height: 70vh;
+  margin-top:175px;
+  display:flex;
+  flex-flow: wrap;
+  justify-content: center;
 }
 
 .create-text{
-  grid-column-start:1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: center;
-}
-
-.create-header{
-  font-size: 24px;
+  margin: 0 25px 0 25px;
 }
 
 .login-header-signup{
-  grid-row-start:2;
-  text-decoration: none;
-  font-size: 14px;
-  color:  #424242;
-  }
+text-decoration: none;
+font-size: 14px;
+color:  #424242;
+}
 
 .login-link{
 text-decoration: none;
@@ -35,14 +21,19 @@ color:#f50057;
 font-size:14px;
 }
 
+.signup-form-div{
+  margin: 15px 25px 0 50px;
+}
+
 .signup-form{
-  width: 300px;
-  grid-column-start: 2;
+  display:flex;
+  flex-direction: column;
+
 }
 
 .signup-button {
   height: 55px;
-  width: 150px;
+  width: 250px;
   margin-top: 10px;
 }
 

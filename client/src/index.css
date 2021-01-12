@@ -9,7 +9,7 @@ body {
   max-width: 1000px;
   position: relative;
   display: flex;
-  flex-direction: columns;
+  flex-direction: column;
 }
 
 code {
