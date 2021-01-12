@@ -4,9 +4,10 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 const Carousel = () => {
   const items = [
-    <img src='https://res.cloudinary.com/decd84s0g/image/upload/v1610393885/Geosmin/Microgreen1.jpg' className="sliderimg" alt='' />,
-    <img src='https://res.cloudinary.com/decd84s0g/image/upload/v1610393885/Geosmin/Microgreen2.jpg' className="sliderimg" alt='' />,
-    <img src='https://res.cloudinary.com/decd84s0g/image/upload/v1610393885/Geosmin/Microgreen3.jpg' className="sliderimg" alt='' />,
+    <img src='https://res.cloudinary.com/decd84s0g/image/upload/v1610393895/Geosmin/Mushroom1.jpg' className="sliderimg" alt=''/>,
+    <img src='https://res.cloudinary.com/decd84s0g/image/upload/v1610393894/Geosmin/Mushroom4.jpg' className="sliderimg" alt=''/>,
+    <img src='https://res.cloudinary.com/decd84s0g/image/upload/v1610393895/Geosmin/Mushroom2.jpg' className="sliderimg" alt=''/>,
+    <img src='https://res.cloudinary.com/decd84s0g/image/upload/v1610393950/Geosmin/Mushroom6.jpg' className="sliderimg" alt=''/>,
   ];
 
   return (

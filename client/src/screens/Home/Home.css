@@ -1,3 +1,7 @@
+.landing_page{
+    max-width: 1500px;
+}
+
 .homeIMG{
     position:fixed;
     height:360px;
@@ -16,7 +20,7 @@
 }
 
 .box{
-    position: fixed;
+    position: absolute;
     top:215px;
     left:18px;
     height: 55px;
@@ -26,15 +30,17 @@
 }
 
 .subheader{
-    position: fixed;
+    position: absolute;
     color:white;
     z-index:4;
     top:220px;
     left:35px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .subheader2{
-    position: fixed;
+    position: absolute;
     color:white;
     z-index:4;
     top:245px;
@@ -43,6 +49,9 @@
 }
 
 .product-row-top{
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly; */
     height: 850px;
     position: static;
     z-index:0;
@@ -76,11 +85,12 @@
 }
 
 .carousel1,.carousel2,.carousel3{
-  width: 20vw;
+  width: 275px;
   display: flex;
   flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-evenly;
-  margin-top:25px;
+  margin: 25px 15px 100px 15px;
 }
 
 .carousel-images{
@@ -110,4 +120,14 @@
     background-color: white;
 }
 
-
+@media only screen and (max-width: 940px) {
+    .product-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box,.subheader,.subheader2{
+        display: none;
+    }
+    
+}
