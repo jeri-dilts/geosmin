@@ -72,7 +72,6 @@ const ProductDetail = (props) => {
           </Button>
         </div>
         : <></>}
-        </div>
       </div>
     </Layout>
   );
