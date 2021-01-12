@@ -10,6 +10,8 @@ import { Redirect } from "react-router-dom";
 
 const AddProductForm = () => {
 
+  const [isCreated, setCreated] = useState(false)
+
   const [form, setForm] = useState({
     itemName: "",
     imgURL: "",
@@ -17,7 +19,6 @@ const AddProductForm = () => {
     price: "",
     itemType: ""
   });
-
 
   const handleChange = (event) => {
     const {name, value} = event.target
@@ -37,9 +38,14 @@ const AddProductForm = () => {
       label: "Microgreen",
     },
   ];
-  const onProductSubmit = (e) => {
+  
+  const onProductSubmit = async (e) => {
     e.preventDefault();
-    createProduct(form)
+    const created = await createProduct(form)
+    setCreated(created)
+  }
+
+  if (isCreated) {
     return <Redirect to={`/products`} />
   }
 
