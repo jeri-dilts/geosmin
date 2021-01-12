@@ -3,6 +3,7 @@ margin-top:175px;
 display:flex;
 flex-flow: wrap;
 justify-content: center;
+height: 600px;
 }
 
 .add-product-text{
