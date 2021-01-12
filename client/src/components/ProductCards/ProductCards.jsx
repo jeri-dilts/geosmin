@@ -15,18 +15,13 @@ const ProductCards = () => {
   }, []);
 
   const PRODUCTS = products.map((product, index) =>
-    index < 8 ? (
       <ProductCard
         _id={product._id}
         itemName={product.itemName}
         imgURL={product.imgURL}
         key={index}
       />
-    ) : (
-      <h1 key='1000'>Loading....</h1>
-    )
   );
-
   return <>{PRODUCTS}</>;
 };
 
